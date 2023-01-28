@@ -1,0 +1,68 @@
+.Main-Body {
+  height:350px;
+  /* background-color: aqua; */
+}
+.Agri-Text {
+    width:45%;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Text1 {
+    width:500px;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0C764C;
+}
+.Text2 {
+    width:500px;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.Products {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+}
+.Shopping {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Image-Holder1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items:center;
+    height:300px;
+
+}
+.Image-Holder2 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items:center;
+    height:300px;
+}
+.img1 {
+ height: 270px;
+ border-radius: 40px;
+ width: 250px;
+}
+.img2 {
+    height: 270px;
+    border-radius: 40px;
+    width: 260px;
+   }

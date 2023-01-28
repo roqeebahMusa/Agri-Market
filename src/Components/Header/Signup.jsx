@@ -1,8 +1,8 @@
-import React from 'react'
+import  './Signup.css'
 
 const Signup = () => {
   return (
-    <div>Signup page</div>
+    <div className='Signup-Header'></div>
   )
 }
 

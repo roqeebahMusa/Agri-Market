@@ -8,10 +8,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color:chartreuse; */
 }
 .Logo-Holder {
     width : 250px;
     height:60px;
+    cursor: pointer;
 }
 .Header-Text {
     width: 300px;
@@ -49,4 +51,9 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+.Livestock-Products {
+    height: 250px;
+    background-color: blue;
+    width: 100%;
 }
