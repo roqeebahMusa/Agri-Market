@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Formal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    display: none;
+
+  }
+
+  input:invalid[focus = "true"] ~ span {
+    display: block;
+  }
+  input:invalid[focus = "true"] {
+    border: 1px solid red;
+
+  }

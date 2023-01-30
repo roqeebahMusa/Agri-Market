@@ -11,6 +11,7 @@
     align-items: center;
     background-color: snow;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
 }
 .Logo-Holder {
     width : 250px;
@@ -62,6 +63,16 @@
 }
 .Burger {
     display: none;
+}
+.Home {
+    text-decoration: none;
+    color: black;
+}
+.Marketplace {
+    text-decoration: none;
+}
+.Cart {
+    text-decoration: none;
 }
 /* *{
     padding: 0%;

@@ -12,9 +12,11 @@ const Header = () => {
             <img className="Logo" src={Agri} onClick={() => navigate("/")}/>
         </div>
         <div className="Header-Text">
-            <p>Home</p>
-            <p>Marketplace</p>
-            <p>Cart</p>
+            <NavLink to='/'> <p className="Home">Home</p> </NavLink>
+
+           <NavLink to="/Marketplace"> <p className="Marketplace">Marketplace</p> </NavLink> 
+
+            <NavLink to='/Cart'> <p>Cart</p> </NavLink>
         </div>
         <div className="Accounts">
            <NavLink to="/Login"><button onClick={() => navigate} className="Acct-one">Log in</button></NavLink> 

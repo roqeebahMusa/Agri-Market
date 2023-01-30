@@ -1,13 +1,12 @@
 .Signup {
     width:100%;
     height: 94vh;
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .Signup-Main {
-    width: 50%;
+    min-width: 170%;
     height: 550px;
     background-color: white;
     border-radius: 20px;
@@ -16,12 +15,11 @@
     align-items: center;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+    margin-top: 100px;
 }
 .Agri {
     width:130px;
-    height: 35px;
-    /* background-color: aqua; */
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +33,6 @@
 }
 .Sign-Text {
     width:300px;
-    /* background-color: aquamarine; */
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -45,55 +42,37 @@
 .form {
     text-align: center;
 }
-.Inputs {
-    height: 270px;
+form{
+    padding: 40px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .p{
+    
+    color: white;
+
+  }
+  .inputField {
+    width:75%;
+    height: 320px;
     /* background-color: red; */
-    width: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-} 
-.Input1 {
-    width:90%;
-    height:40px;
-    border-radius: 6px;
+    justify-content:space-between ;
+  }
+  input{
     outline: none;
-}
-.Input2 {
-    width:90% ;
-    height:40px;
-    border-radius: 6px;
-    outline: none;
-}
-.Input3 {
-    width:90% ;
-    height:40px;
-    border-radius: 6px;
-    outline: none;
-}
-.Input4 {
-    width:90% ;
-    height:40px;
-    border-radius: 6px;
-    outline: none;
-}
-.Input5 {
-    width:90% ;
-    height:40px;
-    border-radius: 6px;
-    outline: none;
-}
-.Input6 {
-    width:90% ;
-    height:40px;
-    border-radius: 6px;
-    outline: none;
-}
+    height: 35px;
+    width: 100%;
+    border-radius: 8px;
+  }
 .Agree {
-    width:56%;
+    width:82%;
     height:30px;
-    /* background-color: blueviolet; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -120,3 +99,5 @@
     border: none;
     cursor: pointer;
 }
+
+ 

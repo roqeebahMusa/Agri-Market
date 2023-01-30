@@ -3,8 +3,9 @@ import Header from './Components/Header/Header'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from './Components/Header/Login';
 import Signup from './Components/Header/Signup';
-// import Body from './Components/Body/Body'; 
 import "./App.css"
+import Marketplace from './Components/Marketplace/Marketplace';
+import Cart from './Components/Cart/Cart';
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
         <Router>
         <Header />
           <Routes>
-            {/* <Route path='/' element={<Body />} /> */}
             <Route path='/Login' element={<Login />}/>
             <Route path='/Signup' element={<Signup />}/>
+            <Route path='/Marketplace' element={<Marketplace/>} />
+            <Route path='/Cart' element={<Cart />} />
           </Routes>
         </Router>
     </div>
