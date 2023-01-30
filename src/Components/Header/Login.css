@@ -1,29 +1,69 @@
-.Login-Main {
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+.login_main{
     width:100%;
-    height:94vh;
-    background-color: black ;
+    height:90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.Login {
-    width: 50%;
-    height: 550px;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around; 
     align-items: center;
     flex-direction: column;
+    
 }
-.Agri {
-    width:130px;
-    height: 35px;
-    /* background-color: aqua; */
+.login_wrap{
+    width: 50%;
+    height:80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: white;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: rgba(105, 54, 54, 0.24) 0px 3px 8px;
+    margin-top: 100px;
 }
-.lg2 {
-    width: 140px;
+.logim_wrap_text{
+    width:75%;
+    height: fit-content;
+    text-align: center;
+}
+.loginkkk{
+    width: 80%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: red; */
+    align-items: center;
+}
+.loginInput{
+    width:100%;
+    height: 35px;
+    box-shadow: rgba(105, 54, 54, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  outline: 8px;
+  border: 4px;
+
+}
+.lgnp{
+    width:90%;
+    height:60%;
+/* background:green; */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+.login_button{
+    width: 120px;
+    height: 50px;
+   border: none;
+   background-color: #0C764C;
+    color:aliceblue;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
 }

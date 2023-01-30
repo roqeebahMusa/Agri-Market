@@ -6,6 +6,7 @@ import Signup from './Components/Header/Signup';
 import "./App.css"
 import Marketplace from './Components/Marketplace/Marketplace';
 import Cart from './Components/Cart/Cart';
+import Body from './Components/Body/Body';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Routes>
             <Route path='/Login' element={<Login />}/>
             <Route path='/Signup' element={<Signup />}/>
+            <Route path='/Body' element={<Body />} />
             <Route path='/Marketplace' element={<Marketplace/>} />
             <Route path='/Cart' element={<Cart />} />
           </Routes>

@@ -22,9 +22,9 @@ const handleChange = e => {
       id: 1,
       placeholder: "First Name",
       type: "text",
-      errMsg: "Name has to be at least 5 characters and not more than 25 characters and must begin with uppercase",
+      errMsg: "Name has to be at least 3 characters and not more than 18 characters and must begin with uppercase",
         required: true,
-        pattern: `[a-zA-Z][a-zA-Z0-9-_. ]{5,25}`
+        pattern: `[a-zA-Z][a-zA-Z0-9-_. ]{3,18}`
         },
 
         {

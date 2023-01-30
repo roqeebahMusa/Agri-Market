@@ -1,14 +1,55 @@
+import React, {useState} from 'react'
+import LoginInputs from "../Header/LoginInputs"
 import "./Login.css"
-import Lg from "../../assets/AG.png"
 
-const Login = () => {
+function Login() {
+
+  const [ value, setValue] = useState({
+    email:"",
+    password:"",
+  })
+
+  const inputs = [{
+    id:1,
+    placeholder: "E-mail",
+        type: "text",
+        name:"E-mail",
+        value: value.email,
+        errMsg: "must be a valid email",
+        required: true,
+  },
+{
+  id:2,
+  placeholder: "Password",
+  type: "password",
+  name:"Password",
+  errMsg: "must all be numbers",
+  value: value.password,
+  required: true,
+  pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$`
+}]
+
+const handChange=(e)=>{
+  setValue({...value, [e.target.name]:e.target.value})
+}
+
+  
   return (
-    <div className="Login-Main">
-      <div className="Login">
-      <div className='Agri2'>
-           <img className="lg2" src={Lg} />
+    <div className='login_main'>
+      
+      <form className='login_wrap'>
+        <div className="logim_wrap_text">
+        <h2>Welcome Back</h2>
         </div>
-      </div>
+        <div className='lgnp'>
+        <p>Fill the information below to login to Agri-Market</p>
+        {inputs.map((e)=>
+        <LoginInputs key={e.id} {...e}  handChange={handChange}/>
+        )}
+<button className="login_button">Submit</button>
+        </div>
+           <p>forgot password?</p>
+      </form>
     </div>
   )
 }
