@@ -3,7 +3,7 @@ import Header from './Components/Header/Header'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from './Components/Header/Login';
 import Signup from './Components/Header/Signup';
-import Body from './Components/Body/Body';
+// import Body from './Components/Body/Body'; 
 import "./App.css"
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
     <div className='App'>
         <Router>
         <Header />
-        <Body/>
           <Routes>
+            {/* <Route path='/' element={<Body />} /> */}
             <Route path='/Login' element={<Login />}/>
             <Route path='/Signup' element={<Signup />}/>
           </Routes>

@@ -1,0 +1,29 @@
+.Login-Main {
+    width:100%;
+    height:94vh;
+    background-color: black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login {
+    width: 50%;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-direction: column;
+}
+.Agri {
+    width:130px;
+    height: 35px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lg2 {
+    width: 140px;
+}

@@ -5,7 +5,20 @@ import hen from "../../assets/poult.jpg"
 const Body = () => {
   return (
     <div className='Main-Body'>
-        <div className='Agri-Text'>
+       <div className='Agri-Text'>
+            <div className='Agri-Text1'>
+              <div className="Products">
+                  <p>LIVESTOCK PRODUCT AT YOUR FINGERTIPS</p>
+              </div>
+               <div className="Order">
+                <p>We make livestock products available for you at the comfort of your warehouse. Don't have to stress yourself, just order for the products you want and we'll get it delivered.</p>
+              </div> 
+            </div>
+            <div className='Agri-Text2'>
+            <img src />
+            </div>
+        </div>
+        {/* <div className='Agri-Text'>
             <div className='Text1'>
                 <p className='Products'>LIVESTOCK PRODUCT AT YOUR FINGERTIPS</p>
             </div>
@@ -22,8 +35,15 @@ const Body = () => {
              <img className='img2' src={hen}/>
              <p>Chicken</p>
            </div>
-           
-        </div>
+           <div className='Image-Holder2'>
+             <img className='img2' src={hen}/>
+             <p>Chicken</p>
+           </div>
+           <div className='Image-Holder2'>
+             <img className='img2' src={hen}/>
+             <p>Chicken</p>
+           </div>
+        </div> */}
     </div>
   )
 }

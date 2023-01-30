@@ -1,8 +1,43 @@
 .Main-Body {
   height:350px;
-  /* background-color: aqua; */
+  background-color: aqua;
 }
 .Agri-Text {
+    height:300px;
+    background-color: aquamarine;
+    display: flex;
+}
+.Agri-Text1 {
+    width: 45%;
+    background-color: bisque;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Products {
+    width: 400px;
+    height: 60px;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    line-height: 1.3;
+    margin-right: 120px;
+}
+.Order {
+    width:390px;
+    background-color: brown;
+    color: white;
+    margin-right: 120px;
+
+}
+.Agri-Text2 {
+    width: 50%;
+    background-color: blue;
+    height: 300px;
+}
+/* .Agri-Text {
     width:45%;
     height:350px;
     display: flex;
@@ -16,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0C764C;
+    color: white;
 }
 .Text2 {
     width:500px;
@@ -35,26 +70,29 @@
 }
 .Shopping {
     height: 300px;
+    background-color: cadetblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .Image-Holder1 {
     width: 300px;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    align-items:center;
+    height:300px;
+}
+.Image-Holder2 {
+    width: 300px;
+    background-color: chartreuse;
     display: flex;
     flex-direction: column;
     justify-content:space-between ;
     align-items:center;
     height:300px;
 
-}
-.Image-Holder2 {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between ;
-    align-items:center;
-    height:300px;
 }
 .img1 {
  height: 270px;
@@ -65,4 +103,4 @@
     height: 270px;
     border-radius: 40px;
     width: 260px;
-   }
+   } */
