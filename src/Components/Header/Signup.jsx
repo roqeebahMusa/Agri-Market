@@ -1,9 +1,9 @@
 import  './Signup.css'
-import Lg from "../../assets/AG.png"
-import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { useState} from "react";
 import NewFormInput from "../Header/NewFormInput"
-
 const Signup = () => {
+
 const [info, setInfo] = useState({
   firstName: "",
   lastName: "",
@@ -11,10 +11,12 @@ const [info, setInfo] = useState({
   phoneNumber: "",
   address: "",
   password: "",
+  role: "",
 })
 
-const handleChange = e => {
-  setInfo({...info, [e.target.name] : e.target.info}) 
+
+const handleChange = (e) => {
+  setInfo({...info, [e.target.className] : e.target.info}) 
 }
 
   const inputs = [
@@ -39,7 +41,7 @@ const handleChange = e => {
           placeholder: "Email",
           type: "text",
           name: "email",
-          errMsg: "Your email must be Valid",
+          errMsg: "Your email must be Valid and ",
           required: true
        },
 
@@ -60,11 +62,20 @@ const handleChange = e => {
       {
         id: 6,
         placeholder: "Password",
-        type: "text",
+        type: "password",
         name: "password",
         errMsg: "At least 10 characters, min 2 uppercase 2 lowercase, symbol must be included, number must also be included",
         required: true,
+        value: info.password,
         pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{10,}$`
+      },
+
+      {
+        id: 7,
+        placeholder: "Role",
+        type: "text",
+        name: "Role",
+        required: true,
       },
     ]
 
@@ -73,18 +84,16 @@ const handleChange = e => {
         console.log(info)
       }
 
+      const navigate= useNavigate();
   return (
     <div className='Signup'>
       <form onSubmit={getInfo}>
          <div className='Signup-Main'>
-        <div className='Agri'>
-           <img className="Diff" src={Lg} />
-        </div>
         <div className="Sign-Text">
           <p className='sign'>SIGN UP</p>
           <p className="form">Please complete the form to register to be an Agri Market Customer</p>
         </div>
-        <div className='inputField'>   
+        <div className='inputField'>  
         {inputs.map((input) =>
          <NewFormInput key={input.id} {...input} handleChange={handleChange}  info={info[input.name]}/>
         )} 
@@ -98,7 +107,7 @@ const handleChange = e => {
             <p>I agree to  Terms of Services and Privacy Policy of Agri-Market</p>
            </div>
         </div>
-        <button className='signup'>Sign up</button>
+        <button className='signup' onClick={() => navigate('/Profile')}>Sign up</button>
        </div>
       </form>
       

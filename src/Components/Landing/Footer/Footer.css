@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.Footer_main{
+    width:100%;
+    min-height: 50vh;
+    margin-top: 25px;
+    padding-top: 25px;
+    background:#24835d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .AG{
+    background:white;
+    width: 180px;
+    height: 50px;
+    /* padding-bottom: 25px; */
+  }
+  .footer_wrap{
+    width: 90%;
+    display: flex;
+    height: 90%;
+    /* background: peru; */
+    padding-top: 20px;
+  }
+  .left_footer{
+    width: 20%;
+    /* background: yellow; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+
+  }
+  .center_footer{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* background: orange; */
+  }
+  .right_footer{
+    width:25% ;
+    color:aliceblue;
+    font-size:15px;
+    /* text-align: center; */
+    /* background: blue; */
+  }
+
+  .icon{
+    font-size: 25px;
+    color:aliceblue;
+  }
+  .kora{
+    width: 180px;
+    height: 50px;
+  }
+  .footer_bottom{
+    width:100%;
+    min-height: 20px;
+    display: flex;
+    background:white;
+    gap:10px;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px){
+    .footer_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .right_footer{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 12px;
+        
+    }
+    .left_footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .left_footer_icon{
+        display: flex;
+        /* row-gap: 4px; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .center_footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+  }

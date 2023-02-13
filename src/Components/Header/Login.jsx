@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import LoginInputs from "../Header/LoginInputs"
 import "./Login.css"
+import Header from './Header'
 
 function Login() {
 
@@ -50,6 +51,8 @@ const handChange=(e)=>{
         </div>
            <p>forgot password?</p>
       </form>
+      {/* <Header /> */}
+
     </div>
   )
 }

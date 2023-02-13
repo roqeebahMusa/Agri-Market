@@ -1,50 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
+
+*{
+    margin:0%;
+    padding:0%;
     box-sizing: border-box;
+
 }
-.Main-Header {
-    width: 100%;
-    height : 60px;
+
+.Header_Container{
+    width:100%;
+    height: 70px;
+    background: snow;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    background-color: snow;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: fixed;
+    position: relative;
+    top: 0;
+    margin-top: -15px;
 }
-.Logo-Holder {
-    width : 250px;
-    height:60px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Logo {
-    width:200px;
-}
-.Header-Text {
-    width: 300px;
-    height:50px;
+.Main{
+    width: 95%;
+    height:90%;
     display: flex;
     justify-content: space-between;
+    
+}
+.Head_Content{
+    width: 100%;
+    height:100%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    top:0%;
+}
+.NavTab{
+    width: 37%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.images{
+    width: 150px;
+    height: 50px;
+}
+.ape{
+    width:148px;
+    height:49px;
+    cursor: pointer;
+}
+.new{
+    width:150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .Accounts {
-    width:300px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
+    /* background-color: burlywood; */
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    
 }
 .Acct-one {
-    width:100px;
+    width:45%;
     height:40px;
     background: none;
     border: 1px solid #0C764C;
     border-radius: 6px;
     font-size: 15px;
+    transform: scale(1.1);
+    opacity: .9;
 }
 .Acct-one:hover {
     background-color: #0C764C;
@@ -52,7 +84,7 @@
     cursor: pointer;
 }
 .Acct-two {
-    width:100px;
+    width:45%;
     height:40px;
     background-color: #0C764C;
     border-radius: 6px;
@@ -60,18 +92,63 @@
     color: white;
     border: none;
     cursor: pointer;
+    transform: scale(1.1);
+    opacity: .9;
+}
+.linkz{
+    text-decoration: none;
+    color: #0C764C;
+    position: relative;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.linkz:hover{
+    transform: scale(1.1);
+    opacity: .9;
+    /* background-color:#0C764C; */
+    color:#0C764C;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
+    /* padding-left: 5px; */
+    font-size: 19px;
 }
 .Burger {
     display: none;
-}
-.Home {
-    text-decoration: none;
-    color: black;
-}
-.Marketplace {
-    text-decoration: none;
-}
-.Cart {
-    text-decoration: none;
-}
+  }
+  .drop_wrap{
+    /* position:absolute; */
+    right:5%;
+    /* left: 0; */
+  }
+  .drop_main{
+    position:absolute;
+    right:0%;
+    top:100%;
+    background:#0C764C;
+    color:white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    box-shadow:0 0 1px rgba(0, 0, 0, 24)0px 3px 8px ;
+  }
+  .dipdrop{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+@media screen and (max-width: 760px) {
+    .Accounts{
+        display:none;
+    }
+    .Burger {
+      display: flex;
+    }
+}
+@media screen and (max-width: 700px){
+    .NavTab{
+        display: none;
+    }
+}

@@ -7,7 +7,7 @@
 }
 .Signup-Main {
     min-width: 170%;
-    height: 550px;
+    /* height: 650px; */
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -15,7 +15,7 @@
     align-items: center;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .Agri {
     width:130px;
@@ -57,25 +57,29 @@ form{
 
   }
   .inputField {
-    width:75%;
-    height: 320px;
+    width:79%;
+    height: 380px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content:space-between ;
+    align-items: center;
   }
   input{
     outline: none;
     height: 35px;
     width: 100%;
     border-radius: 8px;
+    padding: 12px;
+    margin: 8px;
   }
 .Agree {
-    width:82%;
+    width:85%;
     height:30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 8px;
 }
 .check {
     height:30px;

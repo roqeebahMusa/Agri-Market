@@ -40,12 +40,13 @@
 }
 .loginInput{
     width:100%;
-    height: 35px;
-    box-shadow: rgba(105, 54, 54, 0.24) 0px 3px 8px;
-  border-radius: 5px;
-  outline: 8px;
-  border: 4px;
-
+    height: 40px;
+    /* box-shadow: rgba(105, 54, 54, 0.24) 0px 2px 5px; */
+    border-radius: 8px;
+    outline: 8px;
+    /* border: 4px; */
+    margin: 8px;
+    padding:12px;
 }
 .lgnp{
     width:90%;
