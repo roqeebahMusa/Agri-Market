@@ -67,6 +67,7 @@ import Addproduct from './Components/Dashboard/AddProduct/Addproduct';
 import Profile from "./Components/Profile/Profile"
 import Details from './Components/Details/Details';
 import Admin from "./Components/Form/Decision/Admin/Admin"
+import User from "./Components/Form/Decision/User/User"
 // import MyDashboard from './Components/Dashboard/Dashboard';
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
           <Route path='/Cart' element={<Cart/>} />
           {/* <Route path='/SignUp' element={<SignUp/>} /> */}
           <Route path='/Admin' element={<Admin />} />
+          <Route path='/User' element={<User />}/>
           <Route path='/Login' element={<Login/>} />
           <Route path='/Choose' element={<Choose/>} />
           <Route path='/Password' element={<Password/>} />

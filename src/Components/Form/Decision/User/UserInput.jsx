@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import "./Admin.css";
+import "./User.css";
 
-function AdminInput (props) {
+function UserInput(props) {
     const [focused, setFocused] = useState(false);
 
   const doFocused =()=>{
@@ -29,4 +29,4 @@ function AdminInput (props) {
   )
 }
 
-export default AdminInput
+export default UserInput 

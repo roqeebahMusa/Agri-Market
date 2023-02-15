@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
 // import Header from '../../Header/Header';
 
-function SignUp() {
+function Admin() {
   const navigate = useNavigate()
 
   const [ value, setValues] = useState({
@@ -133,4 +133,4 @@ const receiveValues =(i)=>{
   )
 }
 
-export default SignUp
+export default Admin
