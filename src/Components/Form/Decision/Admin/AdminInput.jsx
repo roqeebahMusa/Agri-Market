@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
-import "./SignUp.css";
-import Admin from "../Decision/Admin/Admin"
-// import User from "../Decision/User/User"
+import "./Admin.css";
 
 function SignIUpInput(props) {
     const [focused, setFocused] = useState(false);
@@ -26,8 +24,6 @@ function SignIUpInput(props) {
         onFocus={() => props.name === "confirmPassword" && setFocused(true)}
          />
         <span className='err'>{props.errMsg}</span>
-        <Admin />
-       {/* <User /> */}
     </div>
     
   )

@@ -3,7 +3,6 @@ import "./Marketplace.css"
 import Goods from './Goods'
 // import Landcont from "../Landing/Landcont"
 import Carousel from '../Carousel/Carousel'
-import Dashboard from "../Dashboard/Dashboard"
 import katti from "../../assets/katti.jpg"
 import hen from "../../assets/hen.jpeg"
 // import { useDispatch } from "react-redux"
@@ -51,7 +50,7 @@ function MarketPlace() {
     
       </div>
       <Carousel />
-      <Dashboard />
+      {/* <Dashboard /> */}
       <Goods />
       
 

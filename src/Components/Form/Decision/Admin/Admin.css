@@ -1,0 +1,116 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+.sign_main{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.sign_form{
+    width: 40%;
+    min-height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    flex-direction: column;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
+
+}
+.tryuu{
+    width: 80%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: red; */
+    align-items: center;
+}
+.zxc{
+    width:100%;
+    height: 35px;
+  border-radius: 5px;
+  border-color: #0C764C;
+}
+.mnbv{
+    width:90%;
+    height:60%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+.zaw{
+    width: 250px;
+    height: 40px;
+    background:#0C764C;
+    color:aliceblue;
+    border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  cursor: pointer;
+}
+.zaw:hover{
+    transform: scale(1.1);
+    opacity: 9;
+    background-color:#24835d;
+    color: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
+}
+.sign_wrap_text{
+    width:75%;
+    height: fit-content;
+    text-align: center;
+}
+.check_cont{
+    font-size: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    /* background: red; */
+    gap: 10px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.signlogin{
+    cursor: pointer;
+    color: #0C764C;
+}
+.err {
+    font-size: 0.8rem;
+    color: rgb(250, 6, 6);
+    display: none;
+
+  }
+
+.input:invalid[focus = "false"] .err {
+    display: block;
+}
+.input:invalid[focus = "true"] {      
+    border: 1px solid rgb(218, 0, 0);
+
+  }
+
+
+@media screen and (max-width: 760px) {
+    .sign_form{
+        width:80%;
+        margin-bottom: 15px;
+
+    }
+    .signlogo{
+        width:150px;
+        height:80px;
+        margin-top: 20px;
+    }
+}
