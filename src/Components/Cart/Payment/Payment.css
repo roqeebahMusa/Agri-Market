@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Payment-side {
+    width: 100%;
+    height:calc(100vh - 60px) ;
+    background-color: #0C764C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Payment-side2 {
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    /* border-style: solid; */
+    border-radius: 8px;
+}
+.Summary {
+    width: 40%;
+    height: 70vh;
+    background-color: gray;
+}
+.orders {
+    width: 100%;
+    height: 160px;
+    background-color: aqua;
+}
+.order1 {
+    width: 90%;
+    height: 100px;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+}
+.order2 {
+    width:90%;
+    background-color: blue;
+    height: 40px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:  18px;
+}
+.line {
+    height:5px;
+    background-color: #0C764C;
+    border: none;
+}

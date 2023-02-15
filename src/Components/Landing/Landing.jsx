@@ -52,18 +52,28 @@ function Landing() {
       click="Buy Now" navigate="/MarketPlace"
        />
      </div>
+
+     
+     <div className='About_us'>
+    {/* <h1>About page </h1> */}
+    <button className='about_button' onClick={()=> navigate('/About')}>About us</button>
+
+   </div>
      <div className='land_delivery'>
       <div className='land_delivery_text'>
         <h2>We Deliver All Your livestock Products
         to your location in 24 Hours</h2>
       </div>
+
+
       <div  className='land_div_img'>
         <img src={t1} alt="" className='land_delivery_image'/>
       </div>
     </div>
 
      <div className='feedback_landing'>
-     <h3>FeedBack</h3>
+     <h3>What Clients Say About Us</h3>
+     <p className='fidtext'>Check out these feedbacks from some of our satisfied customers.</p>
      <div className='feedback_wrap'>
      <div className='first_feedback'>
       <img src={feedbe} alt="" className='feedback_imag' />
@@ -79,6 +89,7 @@ function Landing() {
      </div>
      </div> 
    </div>
+   
   <Footer />
     </div>
   )

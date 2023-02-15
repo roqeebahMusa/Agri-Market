@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.shadow{
+    width: 250px;
+    /* height: 360px; */
+    color:#222e2a;
+    padding: 8px;
+    background: whitesmoke;
+    /* border-radius: 12px; */
+    margin: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.shadow:hover{
+    transform: scale(1.1);
+    opacity: .9;
+}
+.cards{
+    width:100%;
+    /* height: fit-content; */
+    display: flex;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+}
+.shadow:hover:before, .shadow:focus:before, .shadow:active:before {
+    opacity: 1;
+   
+
+}
+
+.card-wrap{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    
+}
+.wed{
+    height: 210px;
+    width:220px;
+    display: flex;
+    justify-content: center;
+    object-fit:fit;
+}

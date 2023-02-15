@@ -3,25 +3,33 @@ import SignUpInput from "./SignUpInput";
 import "./SignUp.css"
 import AG from "../../../assets/AG.png"
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
+// import Header from '../../Header/Header';
 
 function SignUp() {
   const navigate = useNavigate()
 
   const [ value, setValues] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    address: "",
+    phoneNumber: "",
+    location: "",
     password:"",
-    confirmPassword: "",
     admin: false,
   });
+
+    const {firstName, lastName, email, phoneNumber, location, password} = value
+
+  // console.log(firstName, lastName, email, phoneNumber)
+ 
  
 
   const inputs = [{
     id:1,
-    placeholder: "  Name",
+    placeholder: "First Name",
     type: "text",
-    name: "Name",
+    name: "firstName",
     // value: value.name,
     errMsg: "it has to be at least 4 characters and not more than 20 characters",
     required: true,
@@ -30,7 +38,7 @@ function SignUp() {
   },
 {
   id:2,
-  placeholder: "  E-mail",
+  placeholder: "Last Name",
   type: "text",
   name:"E-mail",
   // value: value.email,
@@ -39,34 +47,52 @@ function SignUp() {
 },
 {
   id:3,
-  placeholder: "  Phone Number",
-  type: "Number",
-  name:"phone Number",
-  // value: value.address,
+  placeholder: "Email",
+  type: "text",
+  name:"email",
   required: true,
-  errMsg:"Must be a valid phone number",
-  pattern: "[0-9]{3}-[0-9]{2}-[0-9]{3}",
+  errMsg:"Must be a valid email",
 },
 {
-  id:4,
-  placeholder: "  Password",
+  id: 4,
+  placeholder: "Phone Number",
+  type:"number",
+  name: "phoneNumber",
+  required: true,
+},
+
+  {
+    id:5,
+    placeholder: "Location",
+    type: "text",
+    name: "location",
+    required: true,
+  },
+
+  {
+  id:6,
+  placeholder: "Password",
   type: "password",
-  name:"Password",
-  errMsg: "must all be numbers",
+  name:"password",
   // value: value.password,
   required: true,
   pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$` 
-},
-{
-  id:5,
-  placeholder: "  Confirm password",
-  type: "password",
-  name:"Confirm password",
-  // value: value.confirmPassword,
-  errMsg: "it has to match password",
-  required: true,
-  pattern: value.password,
-}]
+  },
+
+]
+
+const handleSubmit = async (event) => {
+  try {
+    event.preventDefault();
+  console.log("Created")
+    const response = await axios.post("https://agri-market.onrender.com/api/admin", {firstName: firstName, lastName: lastName, email: email, phoneNumber: phoneNumber, location: location,  password:  password});
+    console.log(response);
+    navigate ('/Login')
+  } catch (error) {
+
+  }
+};
+
 
 const handleChange=(i)=>{
   setValues({...value, [i.target.name]:i.target.value})
@@ -75,14 +101,16 @@ const handleChange=(i)=>{
 const receiveValues =(i)=>{
   i.preventDefault();
   console.log(value)
-  window.location.reload()
 }
 
 
 
 
   return (
+    
     <div className='sign_main'>
+{/* <Header /> */}
+
       <form onSubmit={receiveValues} className='sign_form'>
         <img src={AG} alt="" className='signlogo' />
       <div className="sign_wrap_text">
@@ -100,12 +128,9 @@ const receiveValues =(i)=>{
          <input type="checkbox" onChange={() => setValues ({...value, admin:true})}/> <p className='check_text'>I agree to the Terms of service and privacy of policy of Agri market </p>
          </div>
         
-        <button type='submit' className='zaw'>Submit</button>
-        <p>Already have an account ? <span className="signlogin" onClick={()=> navigate('/Login')}>Login</span></p>
-         {/* <button className='go' onClick={() => navigate ('/Choose')}>Go Back</button> */}
-
+        <button type='submit' className='zaw' onClick={handleSubmit}>Submit</button>
+        <p>Already have an account ? <span className="signlogin" >Login</span></p>
       </form>
-
     </div>
   )
 }

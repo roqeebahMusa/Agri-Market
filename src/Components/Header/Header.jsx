@@ -7,7 +7,6 @@ import {ImMenu3  } from 'react-icons/im'
 import {FaTimes} from 'react-icons/fa'
 import Dropdown from './Dropdown'
 
-
 function Header() {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
@@ -22,7 +21,7 @@ function Header() {
   return (
     <div className="Header_Container">
        <div className="Main">
-          < div className="Head_Content">
+          <div className="Head_Content">
              <div className="images" >         
                <img src={agi} alt="" className='ape'
                 onClick={() => navigate('/')} />
@@ -42,6 +41,7 @@ function Header() {
             </div>
           </div>
         </div>
+        {/* <Header /> */}
     </div>
   )
 }

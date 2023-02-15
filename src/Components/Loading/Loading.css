@@ -1,0 +1,13 @@
+h1{
+    color: rgb(63, 58, 58);
+}
+.loading_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    flex-direction: column;
+}
+p{
+    color: rgb(63, 58, 58); 
+}

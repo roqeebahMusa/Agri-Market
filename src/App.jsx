@@ -54,16 +54,19 @@ import React from 'react'
 import Header from './Components/Header/Header';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Landing from './Components/Landing/Landing';
-import MarketPlace from "./Components/MarketPlace/MarketPlace";
+import Marketplace from "./Components/Marketplace/Marketplace"
 import Cart from "./Components/Cart/Cart"
 import SignUp from "./Components/Form/SignUp/SignUp"
 import Login from "./Components/Form/Login/Login"
 import Choose from "./Components/Form/Decision/Choose"
 import Password from './Components/Form/Password/Password';
 import Resetpassword from './Components/Form/Password/Resetpassword';
-import Profile from './Components/Profile/Profile';
-import UserInfo from './Components/Profile/UserInfo/UserInfo';
-import Settings from './Components/Profile/Settings/Settings';
+import Payment from './Components/Cart/Payment/Payment';
+import MyDashboard from './Components/Dashboard/MyDashboard/MyDashboard';
+import Addproduct from './Components/Dashboard/AddProduct/Addproduct';
+import Profile from "./Components/Profile/Profile"
+import Details from './Components/Details/Details';
+// import MyDashboard from './Components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -73,7 +76,7 @@ function App() {
       <Header/>
     <Routes>
           <Route path='/' element={<Landing/>} />
-          <Route path='/MarketPlace' element={<MarketPlace/>} />
+          <Route path='/Marketplace' element={<Marketplace/>}/>
           <Route path='/Cart' element={<Cart/>} />
           <Route path='/SignUp' element={<SignUp/>} />
           <Route path='/Login' element={<Login/>} />
@@ -81,8 +84,11 @@ function App() {
           <Route path='/Password' element={<Password/>} />
           <Route path='/Resetpassword' element={<Resetpassword/>} />
            <Route path='/Profile' element={<Profile />} />
-           <Route path='/UserInfo' element={<UserInfo />} />
-           <Route path='/Settings' element={<Settings />} />
+           <Route path='/Payment' element={<Payment/>}/>
+           {/* <Route path='/MyDashboard' element={<MyDashboard />}/> */}
+           <Route path='/MyDashboard' element={<MyDashboard />}/>
+           <Route path='/AddProduct' element={<Addproduct />}/>
+           <Route path='/Details/:id' element={<Details /> } />
         </Routes>
       </Router>
     </div>

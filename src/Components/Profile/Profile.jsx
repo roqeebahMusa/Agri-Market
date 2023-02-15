@@ -3,15 +3,13 @@ import { FaUserCircle } from "react-icons/fa"
 import { MdNotifications } from "react-icons/md"
 import { MdSettings } from "react-icons/md"
  import { BiLogOutCircle } from "react-icons/bi"
- import {NavLink, useNavigate} from "react-router-dom"
+ import { useNavigate} from "react-router-dom"
  import A from "../../assets/curve.jpg";
+import Sidebar from "../Dashboard/Sidebar"
 const Profile = ({color,change}) => {
 
-
-  const activeColorObject = {
+  const isActive = {
     color : change ? "#0C764C" : "white",
-    textDecoration: "none",
-    
   }
   
   const colorObject = {
@@ -19,43 +17,15 @@ const Profile = ({color,change}) => {
     color: "black",
   }
 
-  const navigate = useNavigate()
   return (
         <div className="Profile">
-          <div className="Prof1">
-
-      <div className="profHolder">
-              <h2>User Profile</h2>
-
-              <div className="iconsWord">
-                <div className="iconword1">
-                <FaUserCircle  fontSize='25px'/>
-               <NavLink to="/UserInfo"  style={({isActive}) => isActive ? activeColorObject : colorObject}> <p>User info</p> </NavLink> 
-                </div>
-                
-                 <div className="iconword2">
-                <MdNotifications fontSize='25px'/>
-               <NavLink to="/Notifications" style={({isActive}) => isActive ? activeColorObject : colorObject}>  <p>Notification</p> </NavLink>
-                </div>
-
-                <div className="iconword3">
-                <MdSettings  fontSize='25px'/>
-               <NavLink style={({isActive}) => isActive ? activeColorObject : colorObject} to='/Settings'>  <p>Settings</p> </NavLink>
-                </div>
-
-                <div className="iconword4">
-                <BiLogOutCircle fontSize='25px'/>
-                <NavLink to="/" style={({isActive}) => isActive ? activeColorObject : colorObject}> <p>Log out</p> </NavLink>
-                </div>
-                  </div>
-            </div>
-           
-          </div>
+          <Sidebar />
           <div className="Prof2">
             <div className="texts">
               <h2>Your Personal Profile Info</h2>
             </div>
-            <div className="side-bar">
+            <div className="Personal-Info"></div>
+            {/* <div className="side-bar">
               <div className="side-bar1">
                  <div className="upload">
                 <div className="uploadImg">
@@ -82,11 +52,11 @@ const Profile = ({color,change}) => {
                   <input className="name6" type="text" placeholder="Phone Number" />
                 </div>
 
-                <button onClick={() => navigate ("/Successpage")} className="update">Update Profile</button>
+                <button className="update">Update Profile</button>
                
               </div>
              
-            </div>
+            </div> */}
           </div>
         </div>
   )

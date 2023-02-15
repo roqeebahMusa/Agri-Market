@@ -12,6 +12,7 @@ function LoginInputs(props) {
          placeholder={props.placeholder}
          required={props.required}
          pattern={props.pattern}
+         
          className="loginInput"
         />
         

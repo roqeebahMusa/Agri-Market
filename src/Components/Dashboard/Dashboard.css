@@ -1,0 +1,99 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dashboard-part {
+    width: 100%;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+.Dashboard-part2 {
+    width: 25%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* .Burger {
+    display: none;
+}
+@media screen and (max-width: 760px) {
+    .Burger {
+      display: flex;
+    }
+} */
+.Dashboard-part3 {
+     width: 100%;
+     height: 50vh;
+     /* background-color: chartreuse; */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
+} 
+.Dashboard-part-image {
+    width: 80%;
+    height: 7vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Dashboard-image {
+    width: 60%;
+}
+.Dashboard-part-contents {
+    width: 80%;
+    height: 80vh;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.Dashboard-part-contents1 {
+    width: 100%;
+    height: 60px;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Dashboard-part-contents2 {
+    width: 100%;
+    height: 60px;
+    /* background-color:coral; */
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+}
+.Dashboard-part-contents3 {
+    width: 100%;
+    height: 60px;
+    /* background-color: cornsilk; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 20px; */
+}
+.Dashboard-part-contents4 {
+    width: 100%;
+    height: 60px;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-right: 20px; */
+}
+.addproduct {
+   height: 19px;
+   display: flex;
+align-items: center;
+    gap: 15px;
+    width: 230px;
+}

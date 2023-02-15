@@ -20,6 +20,8 @@
     align-items: center;
     background: white;
     flex-direction: column;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
+
 }
 .tryuu{
     width: 80%;

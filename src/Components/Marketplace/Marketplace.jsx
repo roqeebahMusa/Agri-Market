@@ -1,36 +1,58 @@
 import React from 'react'
-import "./MarketPlace.css"
-import Landcont from "../Landing/Landcont"
+import "./Marketplace.css"
+import Goods from './Goods'
+// import Landcont from "../Landing/Landcont"
 import Carousel from '../Carousel/Carousel'
-import Dashboard from "../DashBoard/Dashboard"
+import Dashboard from "../Dashboard/Dashboard"
 import katti from "../../assets/katti.jpg"
 import hen from "../../assets/hen.jpeg"
+// import { useDispatch } from "react-redux"
+// import { addToCart } from "../Features/Features"
+
+
+
 
 function MarketPlace() {
+  // const dispatch = useDispatch()
+
+  // const dispatch = useDispatch()
   return (                                 
     <div className='Market_main'>
-      <div className='Market_wrap'>
+      <div className='Market_wrap'>             
       <div className='Market_top'>
       <input type="text" placeholder='search' className='marketsearch'/> <button className="marketbutt">Search</button>
       </div>
       <h2>Livestock at your finger tips</h2>
     <p>Forget the hustle, lets go to the market for you!!!</p>
-      <div className='market_load'>
-      <Landcont
-      ftext="Chicken  based on their breeds"
-      text="Your health is a priority to us and we  have a list of healthy food items that will help you manage certain health conditions"
-      click="add to cart" navigate="/Cart"
-      img={hen} />
-      <Landcont
-      ftext="Shop Different Species of Catfish"
-      text="You can view our list of catfish species and shop for the species that suits your meals..."
-      click="add to cart" navigate="/Cart"
-      img={katti} />
-      </div>
+      <div className='market_load1'>
+        <div className='market-img'>
+          <img className='hen' src={hen} />
+        </div>
+        <div className='marketText'>
+          <h2>Chicken  based on their breeds</h2>
+          <p>Your health is a priority to us and we  have a list of healthy food items that will help you manage certain health conditions</p>
+       <div className='cart'>
+          <button className='cart2'>Add to Cart</button>
+       </div>
+        </div>
+          </div>
+          <div className='market_load1'>
+        <div className='market-img'>
+          <img className='hen' src={katti} />
+        </div>
+        <div className='marketText'>
+          <h2>Shop Different Species of Catfish</h2>
+          <p>You can view our list of catfish species and shop for the species that suits your meals...</p>
+       <div className='cart'>
+          <button className='cart2'>Add to Cart</button>
+       </div>
+        </div>
+          </div>
+    
       </div>
       <Carousel />
       <Dashboard />
-      
+      <Goods />
       
 
     </div>
