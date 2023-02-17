@@ -6,6 +6,7 @@ import {useNavigate} from "react-router-dom"
 import {ImMenu3  } from 'react-icons/im'
 import {FaTimes} from 'react-icons/fa'
 import Dropdown from './Dropdown'
+import {CgProfile} from 'react-icons/cg'
 
 function Header() {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ function Header() {
   const handlechange = () => { 
     setToggle(!toggle) 
   }
+
+  const getResponse = JSON.parse(localStorage.getItem("response"));
  
   return (
     <div className="Header_Container">
@@ -29,10 +32,13 @@ function Header() {
 
               <Nav />
 
-<div className="Accounts">
+            {
+              getResponse ? <h4 className='login_response'> {getResponse.data.data.firstName} <CgProfile fontSize={"28px"}/> </h4> : 
+              (  <div className="Accounts">
            <button className="Acct-two" onClick={()=> navigate('/Choose')}>Sign up</button>
          <button onClick={() => navigate('/Login')} className="Acct-one">Log in</button>
-        </div>
+        </div> )
+}
 
             <div className='Burger'>
                
