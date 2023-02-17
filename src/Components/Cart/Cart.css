@@ -28,12 +28,12 @@
 .emptybotton{
     width:105px;
     height:35px;
-    background: none;
+    /* background: none; */
     border: 1px solid #0C764C;
     border-radius: 6px;
     font-size: 15px;
-    color:black;
-    background:white ;
+    color:whitesmoke;
+    background:#e6790c ;
     position: relative;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
@@ -42,8 +42,8 @@
 .emptybotton:hover{
     transform: scale(1.1);
     opacity: 9;
-    background-color:#8f551b ;
-    color: whitesmoke;
+    background-color:#e6790c ;
+    color: rgb(199, 175, 175);;
     border-radius: 3px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
 
@@ -69,9 +69,13 @@ span{
     justify-content: center;
     flex-direction: column;
 }
+.Cart-Box h2{
+    color:#0C764C
+}
 .Cart-Box{
     width: 60%;
-    height: 40%;
+    min-height: 40%;
+    text-align: center;
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;
@@ -87,8 +91,10 @@ span{
     position: sticky;
     top: 150px;
     justify-content: space-between;
-    background-color: white;
+    background-color:#0C764C;
     width: 100%;
+    color: aliceblue;
+    /* background: red; */
 }
 .Cart-Title h4:hover{
     color: red;
@@ -96,6 +102,7 @@ span{
     cursor: pointer;
 }
 .Cart-Items{
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -133,13 +140,15 @@ span{
     /* background-color: yellow; */
 }
 .Cart-Calc button{
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 25px; */
     border: none;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
+    background:#24835d;
+    color:white;
 }
 .Cart-Check{
     width: 100%;
