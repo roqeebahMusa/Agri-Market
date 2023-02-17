@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import Swal from 'sweetalert2'
 import { addToCart, total } from "../../Redux/Features";
 
-
+ 
 const Details = () => {
     const dispatch = useDispatch()
     const {_id} = useParams()

@@ -61,13 +61,12 @@ import Login from "./Components/Form/Login/Login"
 import Choose from "./Components/Form/Decision/Choose"
 import Password from './Components/Form/Password/Password';
 import Resetpassword from './Components/Form/Password/Resetpassword';
-// import Payment from './Components/Cart/Payment/Payment';
-import Addproduct from './Components/Dashboard/AddProduct/Addproduct';
-import Profile from "./Components/Profile/Profile"
-// import Details from './Components/Details/Details';
 import Admin from "./Components/Form/Decision/Admin/Admin"
 import User from "./Components/Form/Decision/User/User"
+// import About from './Components/Landing/About/About';
 import Details from './Components/Details/Details';
+import Dashboard from './Components/DashBoard/Dashboard';
+import Addpage from './Components/DashBoard/Addpage';
 
 function App() {
   return (
@@ -83,14 +82,12 @@ function App() {
           <Route path='/User' element={<User />}/>
           <Route path='/Login' element={<Login/>} />
           <Route path='/Choose' element={<Choose/>} />
-          <Route path='/Password' element={<Password/>} />
+          {/* <Route path='/About' element={<About/>} /> */}
+         <Route path='/About' element={<About/>} /> <Route path='/Password' element={<Password/>} />
           <Route path='/Resetpassword' element={<Resetpassword/>} />
-           <Route path='/Profile' element={<Profile />} />
-           {/* <Route path='/Payment' element={<Payment/>}/> */}
-           {/* <Route path='/MyDashboard' element={<MyDashboard />}/> */}
-           {/* <Route path='/MyDashboard' element={<MyDashboard />}/> */}
-           <Route path='/AddProduct' element={<Addproduct />}/>
            <Route path='/Details/:_id' element={<Details /> } />
+           <Route path='/Dashboard' element={<Dashboard/>} />
+           <Route path='/Addpage' element={<Addpage/>} />
         </Routes>
       </Router>
     </div>
