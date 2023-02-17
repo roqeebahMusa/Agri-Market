@@ -36,7 +36,6 @@ function Login() {
   errMsg: "must all be numbers",
   value: value.password,
   required: true,
-  // pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$`
 }]
 
 
@@ -48,10 +47,6 @@ const handleSubmit = async (event) => {
       axios.post("https://agri-market.onrender.com/api/login", {email, password }) 
       .then(function (res) {
         console.log(res.data)
-        // console.log(res.data.message)
-        // localStorage.setItem ( "value",JSON.stringify( res))
-        // res.data.data.email === value.email ? dispatch(addUser(res)) : null
-        // res.data.data.email === value.email ? navigate('/admin') : null
     }).catch((e) => {
         console.log(e)
     })
@@ -90,58 +85,3 @@ const handChange=(e)=>{
 }
 
 export default Login
-
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-
-// const LoginForm = () => {
-//   const [username, setUsername] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [error, setError] = useState(null);
-
-//   const handleSubmit = async (event) => {
-//     event.preventDefault();
-
-//     try {
-//       const response = await axios.post('https://api.example.com/login', {
-//         username,
-//         password,
-//       });
-
-//       if (response.status === 200) {
-//         console.log('Login successful.');
-//         // Perform further actions, such as redirecting the user to a protected page
-//       }
-//     } catch (err) {
-//       setError('Login failed.');
-//     }
-//   };
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <div>
-//         <label htmlFor="username">Username:</label>
-//         <input
-//           type="text"
-//           id="username"
-//           value={username}
-//           onChange={(event) => setUsername(event.target.value)}
-//         />
-//       </div>
-//       <div>
-//         <label htmlFor="password">Password:</label>
-//         <input
-//           type="password"
-//           id="password"
-//           value={password}
-//           onChange={(event) => setPassword(event.target.value)}
-//         />
-//       </div>
-//       <button type="submit">Login</button>
-//       {error && <div style={{ color: 'red' }}>{error}</div>}
-//     </form>
-//   );
-// };
-
-// export default LoginForm;
