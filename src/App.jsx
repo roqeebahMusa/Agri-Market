@@ -61,14 +61,13 @@ import Login from "./Components/Form/Login/Login"
 import Choose from "./Components/Form/Decision/Choose"
 import Password from './Components/Form/Password/Password';
 import Resetpassword from './Components/Form/Password/Resetpassword';
-import Payment from './Components/Cart/Payment/Payment';
-// import MyDashboard from './Components/Dashboard/MyDashboard/MyDashboard';
+// import Payment from './Components/Cart/Payment/Payment';
 import Addproduct from './Components/Dashboard/AddProduct/Addproduct';
 import Profile from "./Components/Profile/Profile"
-import Details from './Components/Details/Details';
+// import Details from './Components/Details/Details';
 import Admin from "./Components/Form/Decision/Admin/Admin"
 import User from "./Components/Form/Decision/User/User"
-// import MyDashboard from './Components/Dashboard/Dashboard';
+import Details from './Components/Details/Details';
 
 function App() {
   return (
@@ -80,7 +79,6 @@ function App() {
           <Route path='/' element={<Landing/>} />
           <Route path='/Marketplace' element={<Marketplace/>}/>
           <Route path='/Cart' element={<Cart/>} />
-          {/* <Route path='/SignUp' element={<SignUp/>} /> */}
           <Route path='/Admin' element={<Admin />} />
           <Route path='/User' element={<User />}/>
           <Route path='/Login' element={<Login/>} />
@@ -88,11 +86,11 @@ function App() {
           <Route path='/Password' element={<Password/>} />
           <Route path='/Resetpassword' element={<Resetpassword/>} />
            <Route path='/Profile' element={<Profile />} />
-           <Route path='/Payment' element={<Payment/>}/>
+           {/* <Route path='/Payment' element={<Payment/>}/> */}
            {/* <Route path='/MyDashboard' element={<MyDashboard />}/> */}
            {/* <Route path='/MyDashboard' element={<MyDashboard />}/> */}
            <Route path='/AddProduct' element={<Addproduct />}/>
-           <Route path='/Details/:id' element={<Details /> } />
+           <Route path='/Details/:_id' element={<Details /> } />
         </Routes>
       </Router>
     </div>

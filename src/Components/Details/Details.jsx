@@ -7,15 +7,15 @@ import Swal from 'sweetalert2'
 import { addToCart, total } from "../../Redux/Features";
 
 
- 
 const Details = () => {
     const dispatch = useDispatch()
-    const {id} = useParams()
+    const {_id} = useParams()
     const [item, setItem] = useState([]);
+    console.log(typeof(+_id))
 
-    const getItem= async()=>{
+    const getItem = async()=>{
         try{
-            const res = await axios.get(`https://agri-market.onrender.com/api/product${id}`); 
+            const res = await axios.get(`https://agri-market.onrender.com/api/product/${_id}`); 
             console.log(res.data.data)
             setItem(res.data.data)
         }catch(err){
@@ -30,18 +30,20 @@ const Details = () => {
 
   return (
     <div className="detail-holder" > 
+    <h2>Detailed Page</h2>
         <div className="detail-card"  >
             <div className="detail-image">
                 <div  className="image-div">
-                    <img className="detail-img" src={item.image} alt=""/>
+                    <img className="detail-img" src={item.image} alt="iges"/>
                 </div>
                 <div  className="image-title">
-                    <h4>{item.productName}</h4>
+                    <h4>Name:{item.productName}</h4>
                 </div>
             </div>
             <div className="detail-details">
-                <p className="detail-desc"><span>Description:</span> {item.desc}</p>
-                <p className="detail-cat">Category: {item.categories}</p>
+                <p className="detail-desc">Description: {item.decs}</p>
+                <p className="detail-cat" > Category: {item.categories}</p><br/>
+                <p className="detail-cat"> Price:₦{item.price}</p>
               
                 <div className="detail-button" onClick={()=>{dispatch(addToCart(item)); dispatch(total());
                 Swal.fire({
@@ -52,7 +54,7 @@ const Details = () => {
                     timer: 1500,
                   })
                 }}>
-                    Add to Cart</div>
+                    Add to Cart</div> 
             </div>
         </div>
     </div>

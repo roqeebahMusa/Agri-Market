@@ -45,41 +45,19 @@ const handleSubmit = async (event) => {
 
       event.preventDefault();
 
-      axios.post("https://agri-market.onrender.com/api/login", {
-        email, password }) 
+      axios.post("https://agri-market.onrender.com/api/login", {email, password }) 
+      .then(function (res) {
+        console.log(res.data)
+        // console.log(res.data.message)
+        // localStorage.setItem ( "value",JSON.stringify( res))
+        // res.data.data.email === value.email ? dispatch(addUser(res)) : null
+        // res.data.data.email === value.email ? navigate('/admin') : null
+    }).catch((e) => {
+        console.log(e)
+    })
       };
-  
-    //   try {
-    //     const response = await axios.post('https://agri-market.onrender.com/api/login', {
-    //       email,
-    //       password,
-    //     });
-  
-    //     if (response.status === 200) {
-    //       // console.log('Login successful.');
-  
-    //     }
-    //   } catch (err) {
-    //     // setError('Login failed.');
-    //   }
-    // // };
 
-
-
-
-// const handleLogin = (email, password) => {
-//   const response = axios.post('https://agri-market.onrender.com/api/login', {
-//     email,
-//     password,
-//   })
-
-// console.log(response)
-// }
-
-
-
-
-const handChange=(e)=>{
+const handChange=(e)=>{ 
   setValue({...value, [e.target.name]:e.target.value})
 }
 
@@ -103,7 +81,7 @@ const handChange=(e)=>{
         )}
 
         <p className='forgotpass' onClick={()=> navigate('/Password')} >forgot password?</p>
-<button className="login_button" onClick={() => navigate('/')}>Login</button>
+<button className="login_button"type='submit'>Login</button>
 <p className="noaccount">Dont have an account ? <span className='spancolor' onClick={()=> navigate('/SignUp')}>Sign up</span></p>
         </div>
       </form>

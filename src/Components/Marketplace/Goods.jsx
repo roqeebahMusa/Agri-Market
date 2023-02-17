@@ -52,7 +52,7 @@ function Goods() {
       {
       load? <Loading /> :
       products.map((i)=>(
-    <Link key={i._id} className='shadow'to={`/Detail/${i._id}`}>
+    <Link key={i._id} className='shadow'to={`/Details/${i._id}`}>
       <div className='image-card'>
           <img src={i.image} className='wed' alt="" /> 
       </div>

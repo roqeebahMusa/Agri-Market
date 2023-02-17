@@ -20,7 +20,7 @@ const CartItems =(props)=>{
               <p>{props.QTY}</p>
               <button onClick={()=> {dispatch(minusItem(props.item)); setChange(!change)}}>-</button>
             </div>
-            <h3>${props.price * props.QTY}</h3>
+            <h3>₦{props.price * props.QTY}</h3>
             <button onClick={()=>{ dispatch(removeItem(props.item)); setChange(!change)}}>Del</button>
          
         </div>
