@@ -30,11 +30,12 @@
     display: flex;
     justify-content: center;
     /* background: blueviolet; */
+    height: 83vh;
 }
 .about_img{
-    width:180px;
-    height: 180px;
-    border-radius: 180px;
+    width:150px;
+    height: 150px;
+    border-radius: 150px;
 }
 .our_mission{
     display: flex;

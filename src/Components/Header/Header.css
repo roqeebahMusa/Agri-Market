@@ -49,13 +49,13 @@
     height:49px;
     cursor: pointer;
 }
-.new{
+/* .new{
     width:150px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+} */
 .Accounts {
     width: 200px;
     height: 50px;
@@ -64,9 +64,11 @@
     align-items: center;
     justify-content: space-between;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    
+    transition-duration: 0.5s;   
 }
+/* .Accounts {
+    display: none;
+} */
 .Acct-one {
     width:45%;
     height:40px;
@@ -81,6 +83,15 @@
     background-color: #0C764C;
     color: white;
     cursor: pointer;
+}
+.headercenter{
+    color:#0C764C ;
+}
+.headercenter2 {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .Acct-two {
     width:45%;
@@ -160,7 +171,7 @@
     /* .NavTab{
       display: none;
     } */
-    .new{
+    .Accounts{
         display:none;
     }
     .Burger {

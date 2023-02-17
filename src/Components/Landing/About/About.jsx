@@ -3,6 +3,7 @@ import "./About.css"
 import Mission from './Mission'
 import Footer from "../Footer/Footer"
 import {useNavigate} from "react-router-dom"
+import Tech from "../../../assets/Farming-tech.jpg"
 
 function About() {
   const navigate = useNavigate()
@@ -18,11 +19,14 @@ function About() {
               <h3>Our Mission</h3>
                 <div className='mission_info'>
                 <Mission
-                abouttext="Access Geniune Livestock products from local vendors. Helping local farmers connect to buyers" />
+                abouttext="Access Geniune Livestock products from local vendors. Helping local farmers connect to buyers" 
+                aboutimg = {Tech}   /> 
                 <Mission 
-                abouttext="Buy Livestock product from your comform zone at the best price" />
+                abouttext="Buy Livestock product from your comfort zone at the best price" 
+                aboutimg = {Tech}  />
                 <Mission
-                abouttext=" Assisting our Customers for the best Shopping Experience" />
+                abouttext=" Assisting our Customers for the best Shopping Experience" 
+                aboutimg = {Tech}  />
                 </div>
 
                 <div className='shopnow_about'>

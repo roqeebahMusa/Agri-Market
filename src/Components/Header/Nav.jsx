@@ -38,8 +38,11 @@ function Nav() {
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
       >
         <p className="headercenter">
-          CART
+          <div className="headercenter2">
+              CART
           <BsCart4 />{cart[0] === undefined ? 0 : cart[0].QTY}
+          </div>
+        
         </p>
       </NavLink>
     </div>
