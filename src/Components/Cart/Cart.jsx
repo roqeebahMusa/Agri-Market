@@ -14,6 +14,21 @@ const Cart = () => {
   
   const dispatch = useDispatch()
 
+  const Payment = () => {
+    const refVal = "my-ref"+ Math.random () * 1000;
+    window.Korapay.initialize({
+      key: "pk_test_hvmxqvX6y7hefdRtdc6ncX316GUbD37FLfazLUvC",
+      reference: "your-unique",
+      amount: 22000, 
+      currency: "NGN",
+      customer: {
+        name: "John Doe",
+        email: "john@doe.com"
+      },
+      notification_url: "https://example.com/webhook"
+  });
+  }
+
   return (
    
     <div className="Cart-Holder">
@@ -33,21 +48,7 @@ const Cart = () => {
       } 
       </div>
       <div className="Cart-Check">
-      <button onClick={
-            function payKorapay() {
-              window.Korapay.initialize({
-                  key: "pk_test_hvmxqvX6y7hefdRtdc6ncX316GUbD37FLfazLUvC",
-                  reference: "your-unique",
-                  amount: 22000, 
-                  currency: "NGN",
-                  customer: {
-                    name: "John Doe",
-                    email: "john@doe.com"
-                  },
-                  notification_url: "https://example.com/webhook"
-              });
-          }
-      }> Check Out </button>
+      <button onClick={Payment}> Check Out </button>
       </div>
       </div>}
     </div>
