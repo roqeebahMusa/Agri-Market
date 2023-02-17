@@ -22,7 +22,7 @@ const Cart = () => {
       <h2>Shopping Cart</h2><br/>
       <div className="Cart-Title">
        
-        <h3>Total:₦{totalAmount}</h3>
+        <h3>Total= ₦{totalAmount}</h3>
         <h4 onClick={()=> {dispatch(clearCart())}}>Clear<BsCart4/></h4>
       </div>
       <div className="Cart-Items">
