@@ -10,7 +10,7 @@
 .choose_wrap{
     width: 50%;
     min-height: 50%;
-    background:#24835d;
+    /* background:#24835d; */
     text-align: center;
     color: aliceblue;
     margin-top: 20px;
@@ -21,9 +21,11 @@
     margin-top: 20px;
     justify-content: center;
     align-items: center;
+    /* background: grey; */
 }
 .nmjk{
     margin-top: 20px;
+    color:#0C764C;
 }
 .buyer{
     width:50%;
@@ -31,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     gap:10px;  
 
 
@@ -61,4 +63,13 @@
     .choose_wrap{
         width:80% ;
     }
+    .buyer{
+        width:80%;
+        height:50px;
+    }
+    .Agent{
+        width:80%;
+        height:50px;
+    }
+
 }

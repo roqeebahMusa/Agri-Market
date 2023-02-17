@@ -12,15 +12,15 @@ const Choose = () => {
     <div className='choose_main'>
       <div className='choose_wrap'>
         <h2 className='nmjk'> we want to serve you better </h2>
-        <p>please choose the option that suits your need </p>
+        <span>Please choose the option that suits your need </span>
 
         <div className='choose_box'>
           <button className='buyer'onClick={()=> navigate('/User ')}>
-          <FaUserCircle fontSize={25} color="#24835d"  />   Sign up As a buyer
+          <FaUserCircle fontSize={25} color="#24835d"  />   User sign up
           </button>
 
           <button className='Agent' onClick={()=> navigate('/Admin ')}>
-          <FaUserNurse fontSize={25} color="#24835d"/> Become An Agent
+          <FaUserNurse fontSize={25} color="#24835d"/> Become A Merchant
           </button>
           
         </div>
