@@ -8,7 +8,7 @@
 .shadow{
     width: 250px;
     /* height: 360px; */
-    color:#222e2a;
+    color:#24835d;
     padding: 8px;
     background: whitesmoke;
     /* border-radius: 12px; */
@@ -25,6 +25,7 @@
 .shadow:hover{
     transform: scale(1.1);
     opacity: .9;
+    
 }
 .cards{
     width:100%;
@@ -38,17 +39,14 @@
 .shadow:hover:before, .shadow:focus:before, .shadow:active:before {
     opacity: 1;
    
-
 }
-
 .card-wrap{
     width:95%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px;
-    
+    padding: 15px;   
 }
 .wed{
     height: 210px;
@@ -56,4 +54,52 @@
     display: flex;
     justify-content: center;
     object-fit:fit;
+}
+.Goods_decision{
+    display: flex;
+    justify-content: space-around;
+    width:200px;
+    margin-top: 10px;
+    margin-bottom:9px
+}
+.goods_details{
+    width:85px;
+    height:28px;
+    background-color:white;
+    color:#24835d;
+    background: none;
+    border: 1px solid #0C764C;
+    border-radius: 6px;
+    font-size: 15px;
+    position: relative;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer; 
+}
+.goods_cart{
+    width:85px;
+    height:28px;
+    background:#24835d;
+    color:white;
+    border: 1px solid #0C764C;
+    border-radius: 6px;
+    font-size: 15px;
+    position: relative;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-size: 13px;  
+}
+.goods_details:hover{
+    transform: scale(1.1);
+    opacity: 9;
+    background-color:#0C764C;
+    color: whitesmoke;
+
+}
+.goods_cart:hover{
+    transform: scale(1.1);
+    opacity: 9;
+    background-color:#0C764C;
+    color: whitesmoke;  
 }

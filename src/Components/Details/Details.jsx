@@ -30,9 +30,10 @@ const Details = () => {
 
   return (
     <div className="detail-holder" > 
-    <h2>Detailed Page</h2>
-        <div className="detail-card"  >
-            <div className="detail-image">
+    {/* <h2>Detailed Page</h2> */}
+        <div className="detail-card">
+           <div className='Details-image-holder'>
+           <div className="detail-image">
                 <div  className="image-div">
                     <img className="detail-img" src={item.image} alt="iges"/>
                 </div>
@@ -40,6 +41,7 @@ const Details = () => {
                     <h4>Name:{item.productName}</h4>
                 </div>
             </div>
+           </div>
             <div className="detail-details">
                 <p className="detail-desc">Description: {item.decs}</p>
                 <p className="detail-cat" > Category: {item.categories}</p><br/>
