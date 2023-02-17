@@ -4,14 +4,14 @@ import "./Login.css"
 import AG from "../../../assets/AG.png"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 function Login() {
+  const [spin, setSpin] =useState(false)
+  
   const navigate = useNavigate()
 
-  const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    // const [error, setError] = useState(null);
-  
 
   const [ value, setValue] = useState({
     email:"",
@@ -22,7 +22,7 @@ function Login() {
     id:1,
     placeholder: "  email",
         type: "text",
-        name:"E-mail",
+        name:"email",
         value: value.email,
         errMsg: "must be a valid email",
         required: true,
@@ -32,31 +32,43 @@ function Login() {
   id:2,
   placeholder: "  Password",
   type: "password",
-  name:"Password",
+  name:"password",
   errMsg: "must all be numbers",
   value: value.password,
   required: true,
+  // pattern: `^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$`
 }]
 
 
 const handleSubmit = async (event) => {
-
-
+try{
+  setSpin(true)
       event.preventDefault();
+      const config = {
+        headers:{
+          "Content-Type":"application/json"
+        }
+      }
+   const response = await axios.post("https://agri-market.onrender.com/api/login", value, config)
+   localStorage.setItem("response", JSON.stringify(response));
+      console.log(response);
+      if(response.status === 200) {
+        navigate('/')
+      }
+   }catch (error) {
+    if(error) {
+      alert(error.response.data.message)
+      window.location.reload()
+    }
+      console.log("error message",  error)
+      console.log("response error", error.response.data.message)
+  }     
+};
 
-      axios.post("https://agri-market.onrender.com/api/login", {email, password }) 
-      .then(function (res) {
-        console.log(res.data)
-    }).catch((e) => {
-        console.log(e)
-    })
-      };
-
-const handChange=(e)=>{ 
+const handleChange=(e)=>{
   setValue({...value, [e.target.name]:e.target.value})
 }
 
-  
   return (
     <div className='login_main'>
       
@@ -69,15 +81,24 @@ const handChange=(e)=>{
         <div className='lgnp'>
         
         {inputs.map((e)=>
-        <LoginInputs key={e.id} {...e}  handChange={handChange}
-          onChange={(event) => setEmail(event.target.value)}
-          onChange2={(event) => setPassword (event.target.value)}
-        />
+        <LoginInputs key={e.id} {...e}  handleChange={handleChange}
+        value={value[e.name]} />
         )}
 
         <p className='forgotpass' onClick={()=> navigate('/Password')} >forgot password?</p>
-<button className="login_button"type='submit'>Login</button>
-<p className="noaccount">Dont have an account ? <span className='spancolor' onClick={()=> navigate('/SignUp')}>Sign up</span></p>
+<button type='submit' className="login_button" >
+{spin ? (
+ <ClipLoader
+ color='#ffffff'
+ loading={spin}
+ size={15}
+ aria-label="Loading Spinner"
+ data-testid="loader"
+/>
+              ) : 'Login'}
+</button>
+
+<p className="noaccount">Dont have an account ? <span className='spancolor'onClick={()=> navigate('/Choose')} >Sign up</span></p>
         </div>
       </form>
     </div>
