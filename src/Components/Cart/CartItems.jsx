@@ -5,10 +5,7 @@ import { removeItem, addToCart, minusItem, total } from "../../Redux/Features";
 
 const CartItems =(props)=>{
   const [change, setChange] = useState(false)
-  
-  useEffect(()=>{
-    dispatch(total())
-}, [change])
+ 
   const dispatch = useDispatch()
     return(
        
