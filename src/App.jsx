@@ -63,7 +63,7 @@ import Password from './Components/Form/Password/Password';
 import Resetpassword from './Components/Form/Password/Resetpassword';
 import Admin from "./Components/Form/Decision/Admin/Admin"
 import User from "./Components/Form/Decision/User/User"
-// import About from './Components/Landing/About/About';
+import About from './Components/Landing/About/About';
 import Details from './Components/Details/Details';
 import Dashboard from './Components/DashBoard/Dashboard';
 import Addpage from './Components/DashBoard/Addpage';
@@ -82,7 +82,7 @@ function App() {
           <Route path='/User' element={<User />}/>
           <Route path='/Login' element={<Login/>} />
           <Route path='/Choose' element={<Choose/>} />
-          {/* <Route path='/About' element={<About/>} /> */}
+          <Route path='/About' element={<About/>} />
          <Route path='/About' element={<About/>} /> <Route path='/Password' element={<Password/>} />
           <Route path='/Resetpassword' element={<Resetpassword/>} />
            <Route path='/Details/:_id' element={<Details /> } />
