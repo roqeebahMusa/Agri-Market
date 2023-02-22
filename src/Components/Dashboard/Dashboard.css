@@ -47,14 +47,32 @@
     width:80%;
     height:100%; 
     background: tomato;
+    display:flex;
+    justify-content: center;
 }
+
+.dash_maincont2 {
+    width: 65%;
+    height: 30%;
+    background-color: crimson;
+    border-radius: 10px;
+}
+
+.ello {
+    width:200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dash_icon{
     display: none;
 }
 .Dashsidemenu_main{
     position:absolute;
-    left: 2px;;
-    top: 22%;
+    left: 12px;
+    top: 13%;
     background:#0C764C;
     color:white;
     padding: 10px;

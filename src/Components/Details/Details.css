@@ -13,10 +13,8 @@
     /* flex-direction: column; */
 }
 .detail-card{
-    width: 50%;
+    width: 55%;
     height:50%;
-    background-color:grey;
-    /* margin-top: 20px; */
     display: flex;
     gap: 10px; 
     padding: 5px;
@@ -24,30 +22,37 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
 }
 .detail-image{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: red;
-    height: 60vh;
+    /* background-color: red; */
+    /* height: 90%; */
     align-items: center;
-    /* justify-content: space-around; */
+    margin-left: 10px;
+    justify-content: space-around;
     
 }
 .Details-image-holder {
     width:50%;
-    height:400px;
+    height:50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: brown; */
 }
 .detail-img{
-    width: 100%;
-    /* height: 200%; */
-    object-fit: contain;
+   width: 100%;
+   height: 40vh;
+    object-fit: cover;
+    /* background-color: red; */
+}
+
+.image-div{
+    flex: 2
 }
 .detail-details{
     display: flex;
@@ -56,12 +61,21 @@
     align-items: center;
     padding: 6px;
     flex: 1.5;
-    height: 32vh;
+    height: 50vh;
+    width: 60%;
+    /* background-color: red; */
+}
+.detail-details2 {
+    /* background-color: tomato; */
+    height: 33vh;
+    margin-left: 12px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.image-div{
-    flex: 2
-}
 .image-title{
     flex: 1;
 }
@@ -112,4 +126,7 @@
         min-height:60%;
 
     }  
+    .detail-img {
+        width: 100%;
+    }
 }

@@ -25,7 +25,7 @@ const Details = () => {
 
     useEffect(()=>{
         getItem()
-        console.log(item)
+        // console.log(item)
     }, )
 
   return (
@@ -38,12 +38,13 @@ const Details = () => {
                     <img className="detail-img" src={item.image} alt="iges"/>
                 </div>
                 <div  className="image-title">
-                    <h4>Name:{item.productName}</h4>
+                    <h2>Name:{item.productName}</h2>
                 </div>
             </div>
            </div>
             <div className="detail-details">
-                <p className="detail-desc">Description: {item.decs}</p>
+                <div className='detail-details2'>
+                     <p className="detail-desc">Description: {item.decs}</p>
                 <p className="detail-cat" > Category: {item.categories}</p><br/>
                 <p className="detail-cat"> Price:₦{item.price}</p>
               
@@ -57,6 +58,8 @@ const Details = () => {
                   })
                 }}>
                     Add to Cart</div> 
+                </div>
+               
             </div>
         </div>
     </div>

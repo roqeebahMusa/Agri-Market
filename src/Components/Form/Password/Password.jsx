@@ -3,7 +3,6 @@ import "./Password.css"
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { useRef } from 'react'
-// import Resetpassword from './Resetpassword';
 
 function Password () {
 

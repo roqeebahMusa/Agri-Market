@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
-import AdminInput from "../Admin/AdminInput"
+import AdminInput from '../Admin/AdminInput'
 import "./Admin.css"
-// import AG from "../../../../assets/AG.png"
+// import Lg from '../../SignUp/Lg.png'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios';
-// import Header from '../../Header/Header';
-
+import axios from "axios"
 import ClipLoader from "react-spinners/ClipLoader";
 
-function Admin() {
+function SignUp() {
   const navigate = useNavigate()
   const [spin, setSpin] =useState(false)
 
@@ -107,15 +105,13 @@ console.log(response);
 if(response.status === 201) {
   navigate('/Login')
 }
-
-
   } catch (error) {
     if(error) {
-      alert(error.response.data.message)
+      alert(error.response.value.message)
       window.location.reload()
     }
       console.log("error message",  error)
-      console.log("response error", error.response.data.message)
+      console.log("response error", error.response.value.message)
 };}
 
 
@@ -163,4 +159,4 @@ const handleChange=(i)=>{
   )
 }
 
-export default Admin
+export default SignUp

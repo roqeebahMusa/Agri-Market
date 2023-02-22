@@ -30,12 +30,17 @@ function Dashboard() {
           <h3 >Dashboard</h3>
           <h4 className="dasth3">HOME</h4>
           <h4 className="dasth3" onClick={() => navigate('/MarketPlace')}>Market Place</h4>
-          <h4 className="dasth3"> Settings</h4>
+          <h4 className="dasth3">Settings</h4>
           <h4 className="dasth3" onClick={() => navigate('/Addpage')}>Upload</h4>
           <h4 className="dasth3" onClick={() => navigate('/Password')}>Change password</h4>
           <h4 className="dasth3">LOG OUT</h4>
         </div>
-        <div className="dash_maincont"></div>
+        <div className="dash_maincont">
+          <div className="dash_maincont2">
+            <h2 className="ello">Hello Miss Chisom</h2>
+            <p></p>
+          </div>
+        </div>
 
       </div>
 

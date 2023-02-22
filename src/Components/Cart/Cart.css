@@ -150,6 +150,15 @@ span{
     background:#24835d;
     color:white;
 }
+.delete {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+.delete:hover {
+    cursor: pointer;
+    color: red;
+ }
 .Cart-Check{
     width: 100%;
     display: flex;

@@ -14,7 +14,7 @@ export default function Addpage() {
       description: "",
       image: "",
       price: "",
-      stockQuantity: "",
+      productQuantity: "",
       categories: "",
       brand: "" ,
     }
@@ -31,12 +31,6 @@ export default function Addpage() {
   };
 
   useEffect(() => {
-    // console.log(product.title)
-    // console.log(product.details)
-    // console.log(product.price)
-    // console.log(product.stockQuantity)
-    // console.log(product.categories)
-    // console.log(product)
   }, [product])
 
   return (
@@ -51,13 +45,13 @@ export default function Addpage() {
 
 
           <p className='textarea'>description</p>
-          <textarea onChange={(e) => { setProduct({ ...product, [e.target.name]: e.target.value }) }} type="text" id="w3review" name="description" maxLength="50%" rows="10" cols="59">
+          <textarea onChange={(e) => { setProduct({ ...product, [e.target.name]: e.target.value }) }} type="text" id="w3review" name="description" maxLength="40%" rows="10" cols="50">
           </textarea>
 
         </div>
 
         <label className='Addproduct_left_middle'>
-          <h3>Image</h3>
+          <h3 className='mage'>Image</h3>
           <input style={{ display: 'none' }} onChange={handleChange} type='file' />
         </label>
 
@@ -68,7 +62,7 @@ export default function Addpage() {
           </div>
           <div className='Addproduct_left_bottom_input'>
             <p>Stock Quantity</p>
-            <input onChange={(e) => { setProduct({ ...product, [e.target.name]: e.target.value }) }} name="stockQuantity" />
+            <input onChange={(e) => { setProduct({ ...product, [e.target.name]: e.target.value }) }} name="productQuantity" />
           </div>
           <div className='Addproduct_left_bottom_input'>
             <p>Categories</p>
@@ -90,7 +84,7 @@ export default function Addpage() {
             <p>{product.description}</p>
           </div>
           <button onClick={() =>
-            (product)} className='Addproduct_right_buttom_button'>Commit</button>
+            (product)} className='Addproduct_right_buttom_button'>Upload</button>
         </div>
       </div>
     </div>
