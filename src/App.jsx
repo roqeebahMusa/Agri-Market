@@ -64,7 +64,7 @@ import About from './Components/Landing/About/About';
 import Details from './Components/Details/Details';
 import DashBoard from "./Components/DashBoard/Dashboard"
 import Addpage from './Components/DashBoard/Addpage';
-import Verify from './Components/Form/Decision/User/Verify';
+import Verify from "./Components/Verify/Verify"
 import Subhead from './Components/Subhead/Subhead';
 
 

@@ -3,6 +3,8 @@ import "./Password.css"
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { useRef } from 'react'
+//https://agri-market.onrender.com/api/changePaswrd/:userId
+//https://agri-market.onrender.com/api//verify/:id
 
 function Password () {
 
