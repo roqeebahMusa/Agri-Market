@@ -1,0 +1,29 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+.Subheadmain{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: grey; */
+}
+.subhead_wrap{
+    width: 95%;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    /* background: green; */
+
+}
+.sunheader_test{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#0C764C;
+    gap:5px;
+}

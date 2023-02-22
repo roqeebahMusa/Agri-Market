@@ -14,7 +14,7 @@
 .dashboard_head{
     width: 100%;
     height: 70px;
-    background: grey;
+    /* background: grey; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +26,11 @@
     height: 90vh;
     display: flex;
     justify-content: space-between;
-    background: paleturquoise;
-    margin-top: 10px;
+    background: rgb(251, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 80px;
+    border-radius : 8px;
+
 }
 /* h4{
     color:white;
@@ -39,9 +42,26 @@
     background:#24835d;
     display: flex;
     align-items: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.dash_sidebar2 {
+    /* background-color: grey; */
+    height:60%;
+    width: 80%;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+}
 
+.ag {
+    width: 150px;
+    height: 40px;
 }
 .dash_maincont{
     width:80%;
@@ -81,7 +101,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: scenyer;
     width:250px;
     height:300px;
     z-index:100;
@@ -101,7 +121,7 @@
     
     cursor: pointer;
     padding: 10px;
-    color:whitesmoke;
+    color:white;
     /* color:black; */
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
@@ -112,6 +132,37 @@
     /* background: rgb(134, 132, 132); */
     background: white;
     color:#0C764C;
+    width: 90%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.dasth4{
+    
+    cursor: pointer;
+    padding: 10px;
+    color:white;
+    /* color:black; */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    margin-bottom: 25px;
+}
+.dasth4:hover{
+    transform: scale(1.1);
+    opacity: .9;
+    /* background: rgb(134, 132, 132); */
+    background: white;
+    color:#0C764C;
+    width: 90%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
 
 }
 

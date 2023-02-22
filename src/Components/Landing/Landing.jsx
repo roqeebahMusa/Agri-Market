@@ -10,9 +10,15 @@ import catti from "../../assets/catti.jpg"
 import t1 from "../../assets/t1.png"
 import feedbe from "../../assets/feedbe.jpeg"
 import Footer from './Footer/Footer'
+import {useEffect} from "react"
 
 
-function Landing() {
+function Landing({props}) {
+
+  useEffect(() => {
+    props(true)
+  }, [props ])
+
   const navigate = useNavigate();
   return (
     <div className='Main-Body'>

@@ -38,7 +38,7 @@ const Details = () => {
                     <img className="detail-img" src={item.image} alt="iges"/>
                 </div>
                 <div  className="image-title">
-                    <h2>Name:{item.productName}</h2>
+                    <h3>Name:{item.productName}</h3>
                 </div>
             </div>
            </div>

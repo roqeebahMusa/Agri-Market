@@ -1,14 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import LoginInputs from "./LoginInputs"
 import "./Login.css"
 import AG from "../../../assets/AG.png"
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import ClipLoader from "react-spinners/ClipLoader";
+import Subhead from '../../Subhead/Subhead'
 
 
-function Login() {
+function Login({props}) {
   const [spin, setSpin] =useState(false)
+  const [view, setView] = useState(false)
   
   const navigate = useNavigate()
 
@@ -69,8 +71,14 @@ const handleChange=(e)=>{
   setValue({...value, [e.target.name]:e.target.value})
 }
 
+useEffect(() => {
+  props()
+}, [props])
+
   return (
-    <div className='login_main'>
+    <>
+    <Subhead />
+      <div className='login_main'>
       
       <form onSubmit={handleSubmit} className='login_wrap'>
       <img src={AG} alt="" className='signlogo' />
@@ -81,7 +89,7 @@ const handleChange=(e)=>{
         <div className='lgnp'>
         
         {inputs.map((e)=>
-        <LoginInputs key={e.id} {...e}  handleChange={handleChange}
+        <LoginInputs key={e.id} {...e} view={view} setView={setView}  handleChange={handleChange}
         value={value[e.name]} />
         )}
 
@@ -102,6 +110,8 @@ const handleChange=(e)=>{
         </div>
       </form>
     </div>
+    </>
+  
   )
 }
 

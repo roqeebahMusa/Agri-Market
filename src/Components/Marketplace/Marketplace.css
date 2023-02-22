@@ -38,10 +38,11 @@
     margin-bottom:15px;
 }
 .marketsearch{
-    width:80%;
+    width:70%;
     height:40px;
     display: flex;
     border-radius: 12px;
+    font-size: 16px;
     
 }
 .market_load1{
