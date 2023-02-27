@@ -4,7 +4,8 @@ import "./Admin.css"
 // import Lg from '../../SignUp/Lg.png'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios"
-import ClipLoader from "react-spinners/ClipLoader";
+// import ClipLoader from "react-spinners/ClipLoader";
+import { PulseLoader } from 'react-spinners'
 
 function SignUp() {
   const navigate = useNavigate()
@@ -142,7 +143,7 @@ const handleChange=(i)=>{
          </div>
         
         <button type='submit' className='zaw'> {spin ? (
- <ClipLoader
+ <PulseLoader
  color='#ffffff'
  loading={spin}
  size={15}

@@ -43,7 +43,7 @@ function Dashboard() {
         <div className="dash_maincont">
           <div className="dash_maincont2">
             <h2 className="ello">Hello Miss Chisom</h2>
-            <p></p>
+            <p>Welcome to your Dashboard where you can </p>
           </div>
         </div>
 

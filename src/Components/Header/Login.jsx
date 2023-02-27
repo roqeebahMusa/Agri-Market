@@ -1,14 +1,37 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import LoginInputs from "../Header/LoginInputs"
 import "./Login.css"
-import Header from './Header'
+import { addUser } from "../../Redux/Features"
+
 
 function Login() {
+  const {verifyAlert} = useContext()
+  const [loader, setLoader] = useState(false)
 
   const [ value, setValue] = useState({
     email:"",
     password:"",
   })
+
+  const userSign = async () => {
+    await axios.post("https://agri-market.onrender.com/api/login", value)
+      .then(function (res) {
+        console.log(res.data)
+        res.data.data.email === value.email ? dispach(addUser(res)) : null
+        setLoader(false)
+        if (res.data.data.verify === true) {
+          res.data.data.email === value.email ? Navigate('/') : null
+        } else {
+          logOut()
+          setLoader(false)
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+        setErr(error.response.data.message)
+        setLoader(false)
+      });
+  }
 
   const inputs = [{
     id:1,
@@ -37,8 +60,15 @@ const handChange=(e)=>{
   
   return (
     <div className='login_main'>
-      
-      <form className='login_wrap'>
+      {verifyAlert && <div className='verifyAlert'>
+        <p>please check your Email for a verification link</p>
+      </div>}
+      <form className='login_wrap'  onSubmit={
+          () => {
+            event.preventDefault();
+            userSign()
+            setLoader(true)
+          }}>
         <div className="logim_wrap_text">
         <h2>Welcome Back</h2>
         </div>

@@ -35,7 +35,6 @@ function Landing({props}) {
               <button className='vbnt' onClick={()=> navigate('/MarketPlace')}>Shop Now</button>
               </div>
       </div>
-      
               <div className='piccont'>
                 <img src={poult} alt="" className='peesu' />
               </div>

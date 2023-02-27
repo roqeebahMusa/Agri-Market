@@ -5,6 +5,8 @@ const initialState = {
     cart: [],
     total : 0,
     amount: 0,
+    user: [],
+
 }
 
 const features = createSlice({
@@ -50,6 +52,11 @@ const features = createSlice({
             state.total = 0;
             state.amount = 0
         },
+
+        addUser: (state, { payload }) => {
+            state.user = [payload];
+          },
+
         total: (state, {payload})=>{
             let amount = 0;
             let total = 0;
@@ -63,6 +70,6 @@ const features = createSlice({
     },
 });
 
-export const {bringProducts, addToCart, removeItem, clearCart, total, minusItem} = features.actions
+export const {bringProducts, addToCart, removeItem, clearCart, total, minusItem, addUser} = features.actions
 
 export default features.reducer

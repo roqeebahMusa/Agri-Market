@@ -1,13 +1,37 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import "./Resetpassword.css"
+import axios from "axios"
+import ClipLoader from "react-spinners/ClipLoader";
+import { useParams } from 'react-router-dom'
 
 function Resetpassword() {
-  
+  const [spin, setSpin] =useState(false)
+
+
+  const inputRef = useRef('')
+  const { id } = useParams()
+  console.log(id)
+  const forget = async () => {
+    try {
+    setSpin(true)
+      const res = await axios.post(`https://agri-market.onrender.com/api/changePaswrd/${id}`, { password: inputRef.current.value })
+      res.status === 200 ? navigate('/login') : null
+      
+    } catch (error) {
+      if(error) {
+        // alert(error.response.data.message)
+        window.location.reload()
+      }
+        console.log("error message",  error)
+        console.log("response error", error.response.data.message)
+    }
+  };
+    
   return (
     <div className='reset_main'>
       <div className='reset_wrap'> 
       <h3>Reset Password</h3>
-      <p className='resetpasswordtext'>Set a new password for your profile on Agri_Market</p>
+      <p className='resetpasswordtext' ref={inputRef}>Set a new password for your profile on Agri_Market</p>
 
       <input
       placeholder='Set New Password'
@@ -17,12 +41,25 @@ function Resetpassword() {
       placeholder='Confirm New Password'
       className='reset_input' />
 
-      <button className='reset_button'> Reset Password </button>
+
+
+      <button className='reset_button' onClick={() => { forget() }}>
+      {spin ? (
+ <ClipLoader
+ color='#ffffff'
+ loading={spin}
+ size={15}
+ aria-label="Loading Spinner"
+ data-testid="loader"
+/>
+              ) : 'Reset Password '}
+         </button>
 
       </div>
     </div>
   )
 }
+
 
 export default Resetpassword
 
