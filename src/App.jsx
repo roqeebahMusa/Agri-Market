@@ -13,10 +13,10 @@ import Admin from "./Components/Form/Decision/Admin/Admin"
 import User from "./Components/Form/Decision/User/User"
 import About from './Components/Landing/About/About';
 import Details from './Components/Details/Details';
-import DashBoard from "./Components/DashBoard/Dashboard"
 import Addpage from './Components/DashBoard/Addpage';
 import Verify from "./Components/Verify/Verify"
 import Subhead from './Components/Subhead/Subhead';
+import DashBoard from "./Components/DashBoard/Dashboard"
 
 function App() {
   const  [display, setDisplay] = useState(true)
@@ -45,9 +45,9 @@ function App() {
            <Route path='/About' element={<About/>} />
           <Route path='/About' element={<About/>} />
            <Route path='/Password' element={<Password/>} />
+           <Route path='/DashBoard' element={<DashBoard/>}/>
            <Route path='/Resetpassword/:id' element={<Resetpassword/>} />
             <Route path='/Details/:_id' element={<Details /> } />
-            <Route path='/DashBoard' element={<DashBoard/>} />
            <Route path='/Addpage' element={<Addpage/>} />
            <Route path='/Verify/:_id' element={<Verify />}/>
            <Route path='/Subhead' element={<Subhead />}/>

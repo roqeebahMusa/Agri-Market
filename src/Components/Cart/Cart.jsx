@@ -48,7 +48,7 @@ const Cart = () => {
       } 
       </div>
       <div className="Cart-Check">
-      <button onClick={Payment}> Check Out </button>
+      <button onClick={Payment}> Check Out </button> 
       </div>
       </div>}
     </div>
