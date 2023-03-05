@@ -17,6 +17,7 @@ import Addpage from './Components/DashBoard/Addpage';
 import Verify from "./Components/Verify/Verify"
 import Subhead from './Components/Subhead/Subhead';
 import DashBoard from "./Components/DashBoard/Dashboard"
+import Settings from './Components/DashBoard/Settings/Settings';
 
 function App() {
   const  [display, setDisplay] = useState(true)
@@ -51,6 +52,7 @@ function App() {
            <Route path='/Addpage' element={<Addpage/>} />
            <Route path='/Verify/:_id' element={<Verify />}/>
            <Route path='/Subhead' element={<Subhead />}/>
+           <Route path='/Settings' element={<Settings />}/>
         </Routes>
       </Router>
     </div>

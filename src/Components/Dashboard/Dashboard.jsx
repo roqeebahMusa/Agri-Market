@@ -3,16 +3,28 @@ import {ImMenu3  } from 'react-icons/im'
 import "./Dashboard.css"
 import {FaTimes} from 'react-icons/fa'
 import Dashsidemenu from "./Dashsidemenu"
-import { useNavigate } from "react-router-dom";
-import AG from "../../assets/AG.png"
+import { NavLink } from "react-router-dom";
 
 function Dashboard() {
   const [toggle, setToggle] = useState(false);
-  const navigate = useNavigate()
 
   const handlechange = () => { 
     setToggle(!toggle) 
   }
+
+  const activeColorObject = {
+    color : "black",
+    textDecoration: "none",
+    fontWeight: 550,
+    
+  }
+
+  const colorObject = {
+    textDecoration: "none",
+    fontWeight: 550,
+    color: "white",
+  }
+
   
 
   return (
@@ -32,21 +44,14 @@ function Dashboard() {
           <div className="dash_sidebar2">
           <h3>Dashboard</h3>
               {/* <h4 className="dasth3">HOME</h4> */}
-          <h4 className="dasth3" onClick={() => navigate('/MarketPlace')}>Market Place</h4>
-          <h4 className="dasth3">Settings</h4>
-          <h4 className="dasth3" onClick={() => navigate('/Addpage')}>Upload</h4>
+              <NavLink to="/Marketplace" style={({isActive}) => isActive ? activeColorObject : colorObject}><h4 className="dasth3">Market Place</h4></NavLink>
+              <NavLink to="/Settings" style={({isActive}) => isActive ? activeColorObject : colorObject}><h4 className="dasth3">Settings</h4></NavLink>
+          <h4 className="dasth3">Upload</h4>
           {/* <h4 className="dasth3" onClick={() => navigate('/Password')}>Change password</h4> */}
           </div>
           <h4 className="dasth4">LOG OUT</h4>
 
         </div>
-        <div className="dash_maincont">
-          <div className="dash_maincont2">
-            <h2 className="ello">Hello Miss Chisom</h2>
-            <p>Welcome to your Dashboard where you can </p>
-          </div>
-        </div>
-
       </div>
 
     </div>

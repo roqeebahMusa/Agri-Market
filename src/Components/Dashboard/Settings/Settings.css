@@ -3,24 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
-.Dashboard_origin{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-}
-.dashboard_head{
-    width: 100%;
-    height: 70px;
-    /* background: grey; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 15px;
-}
+
 .main_dash{
     width:95%;
     height: 90vh;

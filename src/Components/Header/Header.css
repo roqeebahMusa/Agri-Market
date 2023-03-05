@@ -22,7 +22,6 @@
     height:90%;
     display: flex;
     justify-content: space-between;
-    
 }
 .Head_Content{
     width: 100%;
@@ -78,6 +77,8 @@
     font-size: 15px;
     transform: scale(1.1);
     opacity: .9;
+    zoom: 100%;
+    caption-side: top;
 }
 .Acct-one:hover {
     background-color: #0C764C;
