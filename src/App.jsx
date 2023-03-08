@@ -17,7 +17,17 @@ import Addpage from './Components/DashBoard/Addpage';
 import Verify from "./Components/Verify/Verify"
 import Subhead from './Components/Subhead/Subhead';
 import DashBoard from "./Components/DashBoard/Dashboard"
-import Settings from './Components/DashBoard/Settings/Settings';
+import Settings from './Components/Settings/Settings';
+import Barside from "./Components/Barside/Barside"
+import Chicken from "./Components/Category/Chicken";
+import Catfish from "./Components/Category/Catfish";
+import Deleteproduct from "./Components/Deleteproduct/Deleteproduct";
+import Uploadproduct from "./Components/Uploadproduct/Uploadproduct";
+import Footer from './Components/Landing/Footer/Footer';
+import Checkout from "./Components/Checkout/Checkout";
+import Success from "./Components/Checkout/Success"
+import Time from './Components/Time/Time';
+
 
 function App() {
   const  [display, setDisplay] = useState(true)
@@ -53,6 +63,15 @@ function App() {
            <Route path='/Verify/:_id' element={<Verify />}/>
            <Route path='/Subhead' element={<Subhead />}/>
            <Route path='/Settings' element={<Settings />}/>
+          <Route path='/Barside' element={<Barside/> }/>
+       <Route path='/Chicken' element={<Chicken/>}/>
+       <Route path='/Catfish' element={<Catfish/>}/>
+       <Route path='/Deleteproduct' element={<Deleteproduct/>}/>
+       <Route path='/Uploadproduct' element={<Uploadproduct/>}/>
+      <Route path='/Footer' element={<Footer/>}/>
+       <Route path='/Checkout' element={<Checkout/>}/>
+       <Route path='/Success' element={<Success/>}/>
+       <Route path='/Time' element={<Time/>}/>
         </Routes>
       </Router>
     </div>

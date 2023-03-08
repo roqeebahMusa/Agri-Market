@@ -11,12 +11,12 @@ import {MdAlternateEmail } from 'react-icons/md';
 import {HiLocationMarker } from 'react-icons/hi';
 import {MdContactPage } from 'react-icons/md';
 import kora from "../Footer/kora.png"
+import curve from "../Footer/africa2.jpg"
 
 
 function Footer() {
   return (
     <footer className='Footer_main'>
-    <img src={AG} alt="" className='AG' />
     <div className='footer_wrap'>
       <div className='left_footer'>
 <h4>follow us on:</h4> <br/>
@@ -35,8 +35,13 @@ function Footer() {
       </div>
 
       <div className='center_footer' >
+    <img src={AG} alt="" className='AG' />
+    <div className='center_footer2'>
         <h4>Our partners</h4>
+    <img src={curve} alt=" " className='curve'/>
         <img src={kora} alt="" className='kora' />
+    </div>
+  
 
       </div>
       <div className='right_footer'>
@@ -46,12 +51,13 @@ function Footer() {
         
         
 <HiLocationMarker className='icon'/>
-<p>location logo</p>
-<p>location address</p> <br/> <br/> 
+<p>Location</p>
+<p>No 161, Muyibi Street, Apapa, Lagos State</p> <br/> <br/> 
 
 <MdContactPage className='icon'/>
-<p>contact</p>
- <p>08064318819</p>
+<p>Contact</p>
+ <p>+234 806 431 8819</p>
+ <p>+234 907 359 7639</p>
       </div>
 
     </div>

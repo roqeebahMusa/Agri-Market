@@ -1,0 +1,98 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.settings_main{
+    width: 100%;
+   height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: grey; */
+}
+.settings_wrap{
+    width:95%;
+    height: 85vh;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+     /* background:powderblue; */
+}
+.settings_cont{
+    width:78%;
+    height:90%; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   overflow-y: scroll;
+}
+.settings_settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background: peru; */
+    width: 70%;
+}
+
+.settings_input{
+    width:80%;
+    height:40px;
+    margin-bottom: 15px;
+    color: none;
+}
+.settings_input1{
+    width:80%;
+    height:40px;
+    margin-bottom: 15px;
+    background: #24835d;
+    color: white;
+    border: none;
+}
+.top_profile_settings{
+    width: 95%;
+    text-align: end;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.setting_h3{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right:15px;
+    /* background: peru; */
+}
+.setttings_delete_button{
+    width:70%;
+    /* background: peru; */
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+
+}
+.settings_delete1{
+    width:120px;
+    height:35px;
+    background: red;
+    color:aliceblue;
+    border: none;
+
+}
+@media screen and (max-width: 768px) {
+    .settings_cont{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 320px) {
+    .settings_settings{
+        width:90%;
+    } 
+}

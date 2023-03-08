@@ -10,7 +10,7 @@ function Emptycart() {
     <div className='emptycart_main'>
         <div className='emptycart_wrap'>
             <h4 className='emptcuart'>SHOPPING CART</h4>
-       <div className='emptycart_logo'> <HiOutlineShoppingCart fontSize={120} color={'White'} /></div>
+       <div className='emptycart_logo'> <HiOutlineShoppingCart className='shoppingcart' fontSize={120} color={'White'} /></div>
         <h2 className='emptcuart'> Your Cart is Currently Empty </h2>
         <span>Your shopping cart is empty, but it doesn't have to be.
         Check out our marketplace to Shop now.  </span>

@@ -5,14 +5,14 @@
 }
 .emptycart_main{
     width:100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background:whitesmoke;
 }
 .emptycart_wrap{
-    width: 65%;
+    width: 60%;
     min-height: 70vh;
     display: flex;
     justify-content: space-around;
@@ -23,6 +23,7 @@
     padding: 10px;
     color: aliceblue;
     border-radius: 8px;
+    /* margin-top: 20px; */
 
 }
 .emptybotton{
@@ -33,23 +34,24 @@
     border-radius: 6px;
     font-size: 15px;
     color:whitesmoke;
-    background:#e6790c ;
+    background:white ;
     position: relative;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    cursor: pointer;  
+    cursor: pointer; 
+    color: black; 
 }
 .emptybotton:hover{
     transform: scale(1.1);
     opacity: 9;
-    background-color:#e6790c ;
-    color: rgb(199, 175, 175);;
+    /* background-color:#e6790c ; */
+    /* color: rgb(199, 175, 175);; */
     border-radius: 3px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 24)0px 3px 8px;
 
 }
 span{
-    color:#f68b1f;
+    color:#fff;
     font-size: 14px;
 }
 .emptycart_logo{
@@ -63,32 +65,37 @@ span{
 }
 .Cart-Holder{
     width: 100%;
-    height: calc(100vh - 70px);
+    height:90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 40px;
+    /* background: pink; */
 }
-.Cart-Box h2{
+/* .Cart-Box h2{
     color:#0C764C
-}
+} */
 .Cart-Box{
     width: 60%;
     min-height: 40%;
     text-align: center;
-    /* border: 1px solid; */
+    border: 1px solid;
     display: flex;
     flex-direction: column;
     background-color: white;
     color:#0C764C;
     border-radius: 8px;
     /* background: grey; */
+    margin-top: 80px;
+    /* position: fixed; */
     box-shadow:0 0 1px rgba(0, 0, 0, 24)0px 3px 8px ;
+    /* margin-bottom: 40px; */
 }
 .Cart-Title{
     display: flex;
     padding: 5px;
-    position: sticky;
+    /* position: sticky; */
     top: 150px;
     justify-content: space-between;
     background-color:#0C764C;
@@ -108,10 +115,9 @@ span{
     justify-content: center;
     flex-direction: column;
     padding-inline: 10px;
-    max-height: 80%;
+    max-height: 60%;
     overflow-y: scroll;
-    /* align-items: center; */
-    /* background-color: yellow; */
+    
 }
 .Cart-Item{
     width: 100%;
@@ -131,6 +137,16 @@ span{
     height: 70px;
     object-fit: cover;
 }
+.delete {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete:hover {
+    cursor: pointer;
+    color: red;
+ }
 .Cart-Calc{
     width: 80px;
     height: inherit;
@@ -150,23 +166,26 @@ span{
     background:#24835d;
     color:white;
 }
-.delete {
-    border: none;
-    background-color: white;
-    font-size: 16px;
-}
-.delete:hover {
-    cursor: pointer;
-    color: red;
- }
 .Cart-Check{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: peru; */
+    /* margin-top: 15px; */
+}
+
+.clearcart{
+    background:none;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+.clearcart:hover{
+    color:rgb(189, 36, 36);
 }
 .Cart-Check button{
-    background-color: rgb(189, 29, 189);
+    background-color:#24835d;
     color: white;
     width: 30%;
     border: none;
@@ -174,10 +193,11 @@ span{
     border-radius: 5px;
     cursor: pointer;
     transition: all 350ms;
-    transform: scale(1)
+    transform: scale(1);
+    height:35px;
 }
 .Cart-Check button:hover{
-    background-color: rgb(83, 8, 117);
+    background-color: #469978;
     transition: all 350ms;
     transform: scale(1.005);
 }
@@ -190,13 +210,19 @@ span{
 @media screen and (max-width: 625px){
     .emptycart_wrap{
         width:90%;
-        background: none;
+        background: white;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         color:#0C764C;
         min-height:70vh
     } 
     .emptycart_logo{
         background:#0C764C;
-     
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+    }
+    .shoppingcart {
+        font-size: 80px;
     }
 }
 @media screen and (max-width: 625px){
@@ -207,4 +233,12 @@ span{
         min-height: 30vh;
         background: none;
     }  
+}
+
+@media screen and (max-width: 425px) {
+    .emptybotton {
+        background-color: #0C764C;
+        color: white;
+        border: none;
+    }
 }

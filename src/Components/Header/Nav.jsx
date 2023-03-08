@@ -4,17 +4,18 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { useSelector } from "react-redux";
 
-
 function Nav() {
   let activeStyle = {
     textDecoration: "underline",
     fontSize:"15px",
     color:"green",
-    fontWeight:"400"
+    fontWeight:"700"
     
   };
-
-  const cart = useSelector((state) => state.commerce.cart);
+  const cart = useSelector((state) => state.Commerce.cart);
+  
+  // const amount = useSelector((state) => state.commerce.amount);
+  console.log(cart, "My nav")
 
   return (
     <div className="NavTab">
@@ -37,12 +38,10 @@ function Nav() {
         className="linkz"
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
       >
-        <p className="headercenter">
-          <div className="headercenter2">
-              CART
-          <BsCart4 />{cart[0] === undefined ? 0 : cart[0].QTY}
-          </div>
+        <p className="headercenter">  
         
+          CART
+         <BsCart4 />{cart.length}
         </p>
       </NavLink>
     </div>

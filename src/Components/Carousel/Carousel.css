@@ -27,9 +27,9 @@
 }
 
 .cont{
-    width: 90%;
-    height: 250px;
+    width: 80%;
+    height: 220px;
     margin: 0px auto;
     object-fit:fill;
-    border-radius: 15px;
+    border-radius: 5px;
 }

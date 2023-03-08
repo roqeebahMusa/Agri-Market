@@ -196,7 +196,7 @@
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
   .main_wrap{
       flex-direction: column;
       flex-wrap: wrap;
@@ -214,6 +214,7 @@ text-align: center;
 flex-direction: column;
 
   }
+
   .Agri-Main{
       display: flex;
       text-align: center;
@@ -263,8 +264,31 @@ flex-direction: column;
 
   }
 }
-/* @media screen and (max-width: 700px){
-.Textxx{
-  
+@media screen and (max-width: 375px){
+
+  .big_text {
+    font-size: 1.7rem;
+ }
+
+ .smalltip {
+   font-size: 1.02em;
+ }
 }
-} */
+
+@media screen and (max-width: 320px){
+
+  .big_text {
+    font-size: 1.5rem;
+ }
+
+ .smalltip {
+   font-size: 0.8rem;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .about_button {
+    background-color: #0C764C;
+    color: white;
+  }
+}

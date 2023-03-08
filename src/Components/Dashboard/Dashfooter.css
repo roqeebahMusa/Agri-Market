@@ -1,0 +1,39 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.Dashfooter_main{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: tomato; */
+    position:relative;
+    position: fixed;
+    bottom: 0%;
+    /* top:100%; */
+}
+.dashfooter_wrap{
+    width: 95%;
+    height: 49px;
+    background:#0C764C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+.dashfootdown{
+    font-size: 25px;
+    color:aliceblue;
+}
+.Dashfooter_main{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Dashfooter_main{
+        display:flex;
+    }
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Success-page-main1{
+     width: 100%;
+     height: 100vh;
+     /* background: red; */
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.Success-page-main2 {
+    width: 35%;
+    height: 45vh;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Success-design-page1 {
+    width: 50%;
+    height: 40%;
+    /* background-color: sienna; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark {
+    width:45%;
+}
+
+.Success-design-page2 {
+    width: 100%;
+    height: 35%;
+    /* background-color: palegreen; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yea {
+    font-size: 1.5rem;
+    /* margin-bottom: 10px; */
+}
+
+.pay {
+    font-size: 1.6rem;
+    color: #32c671;
+}
+
+.done {
+  width:25%;
+  height:15%;
+background: none;
+  border-radius: 10px;
+  border-color: #32c671;
+  cursor: pointer;
+}
+.done:hover {
+    background-color: #32c671;
+    color: white;
+    font-size: large;
+}
+
+@media screen and (max-width: 750px){
+   .done {
+     color: white;
+     background-color: #32c671;
+   }
+
+   .Success-design-page2 {
+    width: 100%;
+    /* background-color: red; */
+    height: 35%;
+   }
+
+   .pay {
+    font-size: 20px;
+    text-align: center;
+   }
+
+   .checkmark {
+    width: 60%;
+   }
+}
+
+@media screen and (max-width: 425px){
+    .Success-page-main2 {
+        width: 50%;
+    }
+ }
+
+ @media screen and (max-width: 375px){
+    .Success-page-main2 {
+        width: 50%;
+    }
+    .done {
+        width: 35%;
+    }
+ }
+
+ @media screen and (max-width: 554px){
+    .Success-page-main2 {
+        width: 50%;
+    }
+ }

@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.deleteMain{
+    width: 100%;
+    height: 90vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.deleteWrap{
+    width:95%;
+    height: 85vh;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+}
+.delete_cont{
+    width:78%;
+    height:90%; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   overflow-y: scroll; 
+}
+@media screen and (max-width: 768px) {
+    .delete_cont{
+        width: 100%;
+    }
+}
