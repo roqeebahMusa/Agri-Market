@@ -5,8 +5,7 @@ import { ImFacebook2 } from 'react-icons/im';
 import {FaTwitterSquare } from 'react-icons/fa';
 import {BsLinkedin } from 'react-icons/bs';
 import { SiInstagram} from 'react-icons/si';
-import {IoLogoYoutube } from 'react-icons/io';
-// import {SiWhatsapp } from 'react-icons/si';
+import {SiWhatsapp } from 'react-icons/si';
 import {MdAlternateEmail } from 'react-icons/md';
 import {HiLocationMarker } from 'react-icons/hi';
 import {MdContactPage } from 'react-icons/md';
@@ -17,7 +16,17 @@ import curve from "../Footer/africa2.jpg"
 function Footer() {
   return (
     <footer className='Footer_main'>
-    <div className='footer_wrap'>
+      <div className='Footer1'>
+       <div className='FooterLogo'>
+    <img src={AG} alt="" className='AG' />
+       </div>
+         
+        {/* <div className='Location'>
+          <p>Wilmer Stop, Muyibi Street No 161/163 Olodi, Apapa Lagos State.</p>
+        </div> */}
+
+      </div>  
+    {/* <div className='footer_wrap'>
       <div className='left_footer'>
 <h4>follow us on:</h4> <br/>
 <div className='left_footer_icon' >
@@ -65,7 +74,7 @@ function Footer() {
       <h4>Privacy Policy</h4> 
       <h4>Terms of Service</h4>
       <h4>2023 Agri_Market</h4>
-    </div>
+    </div> */}
 
    </footer>
     

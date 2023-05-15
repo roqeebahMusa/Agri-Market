@@ -8,85 +8,118 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: violet;
+    margin-top: 54px;
+    width: 100%;
+    min-height: 100vh;
 }
-.About_mission{
-    width: 250px;
-    min-height: 200;
-    background:#24835d;
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.about-us-page {
-    /* background-color: tomato; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 25%;
-}
+
 .about_wrap{
     width: 75%;
     text-align: center;
-    margin-top:15px;
+    margin-bottom:50px;
     flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     /* background: blueviolet; */
     height: 83vh;
 }
-.about_img{
-    width:120px;
-    height: 120px;
-    border-radius: 120px;
-}
-.our_mission{
+.about-us-page {
+    width:100%;
+    height: 14%;
+    background-color: #0C764C;
+    border-radius: 10px 10px 0px 0px;
     display: flex;
-    margin-top: 30px;
     justify-content: space-around;
     flex-direction: column;
-    /* background-color: teal; */
-    height: 52%;
-   
+    align-items: center;
 }
-.mission_info{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-bottom: 30px;
-
+.about-us-page h1 {
+    color: white;
+    text-decoration: underline;
 }
-.about_shopnow{
-    width:130px;
-    height:30px;
-    background: none;
-    border: 1px solid #0C764C;
-    border-radius: 6px;
-    font-size: 15px;
-    color:snow;
-    background:#24835d ;
-    position: relative;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-.about_shopnow:hover{
-    transform: scale(1.1);
-    opacity: 9;
-    background-color:#24835d;
-    color: whitesmoke;
-    border-radius: 12px;
-}
-.about_small_text{
-    color:aliceblue;
-    font-size: 0.8rem;
+.about-us-page p {
+    color: white;
 }
 
+.about-us-page2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.abt-us-page21 {
+    width: 45%;
+    height: 100%;
+    /* background-color: brown; */
+    background-image: url("../../../assets/poult.jpg");
+}
+.abt-us-page22 {
+    width: 54.1%;
+    height: 100%;
+    /* background-color: blue; */
+    text-align: justify;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.About-Main2 {
+    width: 90%;
+    height: 60vh;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.Choose {
+    height: 15vh;
+    width: 35%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.Choose-Reason {
+    width: 94%;
+    height: 70%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.About_mission{
+    width: 280px;
+    height: 75%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.about_img{
+    width:35%;
+    height: 40%;
+    /* border-radius: 120px; */
+    /* background-color: red; */
+}
+.about_small_text {
+    margin-left: 10px;
+}
 @media screen and (max-width: 768px) {
     /* .para1 {
         font-size: 0.9rem;

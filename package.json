@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
+    "animate.css-react": "^1.1.0",
     "axios": "^1.2.6",
     "persist": "^0.2.7",
     "react": "^18.2.0",

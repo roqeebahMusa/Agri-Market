@@ -5,12 +5,13 @@
 }
 .sign_main{
     width:100%;
-    min-height:100vh;
+    min-height:93vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background: grey; */
+    background: grey;
+    margin-top: 4vh;
    
 }
 .sign_form{
@@ -19,9 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: rgb(151, 13, 13); */
+    background: white;
     flex-direction: column;
     border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tryuu{
     width: 80%;

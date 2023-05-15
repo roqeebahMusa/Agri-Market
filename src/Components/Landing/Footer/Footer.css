@@ -5,20 +5,40 @@
 }
 .Footer_main{
     width:100%;
-   min-height: 30vh;
-    margin-top: 25px;
-    padding-top: 25px;
+   height: 50vh;
+    /* margin-top: 25px;
+    padding-top: 25px; */
     background:#24835d;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
   }
+  .Footer1 {
+    width: 30%;
+    height: 89%;
+    /* background-color: brown; */
+  }
+.FooterLogo {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .AG{
     background:white;
-    width: 180px;
-    height: 50px;
+    width: 200px;
+    height: 80px;
     /* padding-bottom: 25px; */
+  }
+  .Location {
+    width: 100%;
+    height: 10vh;
+    background-color: blue;
+  }
+  .Location p {
+    color: white;
   }
 
   .curve{
@@ -68,10 +88,6 @@
     /* background: blue; */
   }
 
-  .icon{
-    font-size: 25px;
-    color:aliceblue;
-  }
   .kora{
     width: 180px;
     height: 50px;

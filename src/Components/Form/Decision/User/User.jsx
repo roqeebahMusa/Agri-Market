@@ -159,7 +159,7 @@ console.log(value)
 
         <p>Already have an account ? <span className="signlogin" onClick={()=> navigate('/Login')}>Login</span></p>
       </form>
-      <button className='back' onClick={() => navigate('/Choose')}>Go Back</button>
+      {/* <button className='back' onClick={() => navigate('/Choose')}>Go Back</button> */}
     </div>
   )
 }

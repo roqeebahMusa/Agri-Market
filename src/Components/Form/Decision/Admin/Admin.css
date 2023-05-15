@@ -5,21 +5,44 @@
 }
 .sign_main{
     width:100%;
-   min-height:100vh;
+    height: max-content;
+    background-color: blue;
+    display: flex;
+   /* min-height:100%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue; */
+   
+}
+.Main5 {
+    width: 100%;
+    min-height: 88vh;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
+    margin-top: 50px;
+
 }
-.sign_form{
+.sndform {
     width: 40%;
-    min-height:80%;
+    background-color: #0C764C;
+    min-height: 71.5vh;
+    border-radius: 0px 5px 5px 0px;
+    background-image: url("../../../../assets/sign.jpg");
+}
+.sign-form{
+    width: 40%;
+    height:80%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
     flex-direction: column;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 .tryuu{
     width: 80%;
@@ -34,13 +57,12 @@
     width:100%;
     height: 35px;
   border-radius: 5px;
-  border-color: #0C764C;
   padding: 8px;
+  border: 1px solid #0C764C;
+  outline: #0C764C;
+
 }
-.admin_write_up{
-    color:#24835d;
-    font-size: 12px;
-}
+
 .mnbv{
     width:90%;
     height:60%;
@@ -74,6 +96,20 @@ text-align: center;
     width:75%;
     height: fit-content;
     text-align: center;
+    /* background-color: red; */
+}
+.reg {
+    /* background-color: blue; */
+    text-align: left;
+}
+.reg2 {
+    /* background-color: brown; */
+    height: 5vh;
+    text-align: left;
+}
+.admin_write_up{
+    color:#24835d;
+    font-size: 20px;
 }
 .check_cont{
     font-size: 10px;
@@ -106,7 +142,7 @@ text-align: center;
 
 
 @media screen and (max-width: 760px) {
-    .sign_form{
+    .sign-form{
         width:80%;
         margin-bottom: 15px;
 

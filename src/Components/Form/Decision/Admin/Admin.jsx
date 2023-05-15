@@ -124,12 +124,16 @@ const handleChange=(i)=>{
   console.log(value)
  
   return (
-    <div className='sign_main'>
-      <form className='sign_form' onSubmit={handleSubmit}>
+    <div className='Main5'>
+     <form className='sign-form' onSubmit={handleSubmit}>
         {/* <img src={Lg} alt="" className='signlogo' /> */}
       <div className="sign_wrap_text">
-        <h2>Sign up Merchant</h2>
-        <p className='admin_write_up'>Please complete the registration form to become a seller on Agri-Market platform</p><br/>
+        <div className='reg'>
+                <h2>Register Now</h2>
+        </div>
+  <div className='reg2'>
+  <p className='admin_write_up'>Sign Up For Free</p>
+  </div>
         </div>
          <div className=" mnbv">
          
@@ -155,9 +159,10 @@ const handleChange=(i)=>{
 
         <p>Already have an account ? <span className="signlogin" onClick={()=> navigate('/Login')}>Login</span></p>
       </form>
-      <button className='back' onClick={() => navigate('/Choose')}>Go Back</button>
+      {/* <button className='back' onClick={() => navigate('/Choose')}>Go Back</button> */}
+      <div className='sndform'></div>
     </div>
-  )
+)
 }
 
 export default SignUp

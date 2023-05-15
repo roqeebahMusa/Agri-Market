@@ -99,7 +99,7 @@ useEffect(() => {
  <ClipLoader
  color='#fffff'
  loading={spin}
- size={15}
+ size={18}
  aria-label="Loading Spinner"
  data-testid="loader"
 />

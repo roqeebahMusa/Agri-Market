@@ -43,8 +43,8 @@
     height: 40px;
   border-radius: 5px;
   padding: 7px;
-  /* outline: 8px; */
-  /* border: 4px; */
+  outline: 8px;
+  border: 1px solid #0C764C;
   margin-left: 10px;
   /* margin: 8px; */
   /* background: red; */
@@ -93,6 +93,9 @@ text-align: center;
     position: relative;
     cursor: pointer;
     color: #24835d;
+    /* background-color: red; */
+    width: 80%;
+    text-align: right;
 }
 .noaccount{
     margin-top: 12px;
