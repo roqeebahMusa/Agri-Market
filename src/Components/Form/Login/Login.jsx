@@ -97,7 +97,7 @@ useEffect(() => {
 <button type='submit' className="login_button" >
 {spin ? (
  <ClipLoader
- color='#ffffff'
+ color='#fffff'
  loading={spin}
  size={15}
  aria-label="Loading Spinner"
