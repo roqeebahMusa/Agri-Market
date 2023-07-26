@@ -13,11 +13,9 @@
     justify-content:center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* position: relative; */
     position: fixed;
     top: 0%;
     z-index: 99;
-    /* margin-top: -15px; */
 }
 .Main{
     width: 95%;

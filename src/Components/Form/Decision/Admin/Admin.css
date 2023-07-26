@@ -6,13 +6,8 @@
 .sign_main{
     width:100%;
     height: max-content;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
-   /* min-height:100%;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue; */
    
 }
 .Main5 {

@@ -8,7 +8,7 @@ import katti from "../../assets/katti.jpg"
 import hen from "../../assets/hen.jpeg"
 import catti from "../../assets/catti.jpg"
 import t1 from "../../assets/t1.png"
-import feedbe from "../../assets/feedbe.jpeg"
+import feedbe from "../../assets/feedbe.jpg"
 import Footer from './Footer/Footer'
 import {useEffect} from "react"
 
